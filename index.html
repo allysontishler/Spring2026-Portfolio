@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ally Tishler | UX Researcher & Designer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,11 +18,7 @@
     <div class="container nav">
       <a class="brand" href="index.html">Ally Tishler</a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        ☰
-      </button>
-
-      <nav id="site-nav" class="nav-links" aria-label="Primary">
+      <nav class="nav-links" aria-label="Primary">
         <a class="active" href="index.html">Work</a>
         <a href="about.html">About</a>
         <a href="assets/Ally-Tishler-Resume.pdf" target="_blank" rel="noopener">Resume</a>
@@ -30,36 +28,34 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>
-            Hi, I’m Ally, a <span class="accent">UX researcher &amp; designer</span><br />
-            creating experiences in digital spaces<br />
+    <section class="home-hero">
+      <div class="container home-hero-grid">
+        <div class="home-hero-spacer"></div>
+
+        <div class="home-hero-copy">
+          <h1 class="home-h1">
+            Hi, I’m Ally, a <span class="accent">UX researcher &amp; designer</span><br>
+            creating experiences in digital spaces<br>
             for everyone
           </h1>
         </div>
 
-        <div class="hero-media">
-          <!-- Replace with your illustration later -->
-          <div class="media-placeholder media-illustration" aria-label="Hero illustration placeholder"></div>
+        <div class="home-hero-visual">
+          <!-- placeholder for your hero illustration -->
+          <div class="ph-illustration" aria-label="Hero illustration placeholder"></div>
         </div>
       </div>
     </section>
 
     <!-- SELECTED WORK -->
-    <section class="section">
+    <section class="home-work">
       <div class="container">
-        <h2 class="section-title">Selected work</h2>
+        <h2 class="home-section-title">Selected work</h2>
 
-        <div class="work-grid">
-          <!-- Everytime -->
-          <a class="work-card" href="everytime.html">
-            <div class="work-media">
-              <!-- Replace with thumbnail image later -->
-              <div class="media-placeholder media-thumb" aria-label="Everytime thumbnail placeholder"></div>
-            </div>
-
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <a class="project-card" href="everytime.html">
+            <div class="project-thumb ph-thumb" aria-label="Everytime thumbnail placeholder"></div>
             <div class="tags">
               <span class="tag">User Experience</span>
               <span class="tag">User Research</span>
@@ -68,12 +64,9 @@
             </div>
           </a>
 
-          <!-- Purrcel -->
-          <a class="work-card" href="purrcel.html">
-            <div class="work-media">
-              <div class="media-placeholder media-thumb" aria-label="Purrcel thumbnail placeholder"></div>
-            </div>
-
+          <!-- Card 2 -->
+          <a class="project-card" href="purrcel.html">
+            <div class="project-thumb ph-thumb" aria-label="Purrcel thumbnail placeholder"></div>
             <div class="tags">
               <span class="tag">UX Research</span>
               <span class="tag">UI Design</span>
@@ -82,12 +75,9 @@
             </div>
           </a>
 
-          <!-- XHS vs TikTok (placeholder) -->
-          <a class="work-card" href="#" aria-disabled="true">
-            <div class="work-media">
-              <div class="media-placeholder media-thumb" aria-label="XHS vs TikTok thumbnail placeholder"></div>
-            </div>
-
+          <!-- Card 3 (single row) -->
+          <a class="project-card project-card--single" href="#">
+            <div class="project-thumb ph-thumb" aria-label="XHS vs TikTok thumbnail placeholder"></div>
             <div class="tags">
               <span class="tag">Comparative Analysis</span>
               <span class="tag">Cross-Cultural UX</span>
@@ -105,8 +95,8 @@
       <div>
         <h2 class="footer-title">Nice to see you here!</h2>
         <p class="footer-text">
-          <a class="footer-link" href="mailto:allyy.noel@gmail.com">allyy.noel@gmail.com</a><br />
-          This website is hand-coded and deployed through Github &amp; Netlify<br />
+          <a class="footer-link" href="mailto:allyy.noel@gmail.com">allyy.noel@gmail.com</a><br>
+          This website is hand-coded and deployed through Github &amp; Netlify<br>
           Made with love © 2025 Allyson Tishler
         </p>
       </div>
@@ -118,6 +108,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
+
