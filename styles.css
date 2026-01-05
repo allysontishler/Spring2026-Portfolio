@@ -156,37 +156,67 @@ body {
   gap: 28px;
 }
 
-/* Card styling matches the light gray rounded rectangles */
-.work-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  background: var(--card);
-  border-radius: var(--radius-card);
-  padding: 26px 26px 20px;
-}
-
-/* media area inside card */
-.work-card__media {
-  border-radius: 18px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.03);
-  height: 235px; /* close to your first-row cards */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .work-card__media--tall {
   height: 260px; /* slightly taller feel like your bottom card */
 }
 
+/* =========================
+   SELECTED WORK (Image-only cards)
+========================= */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* The link wrapper is just a vertical stack: image then tags */
+.work-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* spacing between image and tag pills */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image IS the card */
 .work-card__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* swap to "contain" if you prefer no crop */
+  height: auto;
   display: block;
+
+  /* Figma-style rounding */
+  border-radius: 20px;
+
+  /* Optional: if you ever add hover effects later, this keeps it clean */
+  overflow: hidden;
 }
+
+/* Bottom card sits alone on the left */
+.work-card--single {
+  grid-column: 1 / 2;
+}
+
+/* Tags */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #e9e9e9;
+  font-size: 11px;
+  color: #6b6b6b;
+  font-weight: 600;
+}
+
 
 /* tags row */
 .tag-row {
