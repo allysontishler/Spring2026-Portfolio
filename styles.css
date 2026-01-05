@@ -103,8 +103,20 @@ body {
 }
 
 .highlight {
-  color: var(--accent);
+  background: linear-gradient(
+    90deg,
+    #D52C69 0%,
+    #FF7A1A 50%,
+    #FFD60F 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  font-weight: 800; /* keeps it punchy like Figma */
 }
+
 
 /* Illustration sizing similar to Figma */
 .hero__art {
