@@ -1,227 +1,291 @@
-:root{
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #8a8a8a;
-  --border: #e8e8e8;
+/* =========================
+   BASE
+========================= */
+:root {
+  --text: #111;
+  --muted: #7f7f7f;
+  --card: #f3f3f3;
+  --tag: #e9e9e9;
+  --footer: #2f2f2f;
+  --footer-text: #cfcfcf;
 
-  --soft-gray: #F5F5F5;
+  /* This is the orange accent in your hero line */
+  --accent: #ff7a1a;
 
-  --accent: #F91F15; /* orange-red from your figma */
-  --radius: 20px;
+  /* Page geometry to mimic your Figma whitespace */
+  --page-pad-x: 80px;
+  --nav-top: 48px;
 
-  --max: 1100px;
+  /* Central content width seen in Figma */
+  --content-max: 920px;
 
-  --h1: 32px;
-  --h2: 24px;
-  --h3: 24px;
-  --body: 16px;
+  --radius-card: 22px;
+  --radius-tag: 999px;
 }
 
-*{ box-sizing: border-box; }
-html, body{ margin:0; padding:0; }
-body{
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
-  line-height: 1.45;
+  background: #fff;
 }
 
-.container{
-  width: min(var(--max), calc(100% - 60px));
+/* =========================
+   NAV (top-left name, top-right links)
+========================= */
+.site-header {
+  padding: var(--nav-top) var(--page-pad-x) 0;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nav__brand {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav__link--active {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* =========================
+   HERO (centered block, text left, illustration right)
+========================= */
+.hero {
+  padding: 120px var(--page-pad-x) 0;
+}
+
+.hero__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero__headline {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+/* Illustration sizing similar to Figma */
+.hero__art {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__img {
+  width: 320px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   SELECTED WORK
+========================= */
+.work {
+  padding: 86px var(--page-pad-x) 110px;
+}
+
+.work__inner {
+  max-width: var(--content-max);
   margin: 0 auto;
 }
 
-a{ color: inherit; text-decoration: none; }
-a:hover{ text-decoration: underline; }
-
-.accent{ color: var(--accent); }
-
-/* NAV */
-.site-header{
-  padding: 30px 0 10px;
-}
-
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-}
-
-.brand{
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav-links{
-  display:flex;
-  gap: 26px;
+.section-title {
+  margin: 0 0 26px;
   font-size: 14px;
-}
-
-.nav-links a{
-  color: var(--muted);
-  font-weight: 400;
-}
-
-.nav-links a.active{
-  color: var(--text);
-  font-weight: 600;
-}
-
-/* HERO */
-.home-hero{
-  padding: 70px 0 30px;
-}
-
-.home-hero-grid{
-  display:grid;
-  grid-template-columns: 0.35fr 0.85fr 0.8fr;
-  align-items:center;
-  gap: 20px;
-}
-
-.home-h1{
-  font-size: var(--h1);
   font-weight: 700;
-  margin: 0;
 }
 
-.home-hero-visual{
-  display:flex;
-  justify-content:flex-end;
-}
-
-.ph-illustration{
-  width: 360px;
-  height: 210px;
-  border-radius: var(--radius);
-  background: #f3f3f3;
-  border: 1px solid var(--border);
-}
-
-/* SELECTED WORK */
-.home-work{
-  padding: 40px 0 80px;
-}
-
-.home-section-title{
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 18px 0;
-  padding-left: 170px; /* matches the “indented” look in your figma */
-}
-
-.projects-grid{
-  display:grid;
+/* Grid: two cards on first row, one on second row (left-aligned) */
+.work-grid {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 26px;
-  padding-left: 170px; /* aligns cards under the text column */
+  gap: 28px;
 }
 
-.project-card{
-  display:block;
+/* Card styling matches the light gray rounded rectangles */
+.work-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card);
+  border-radius: var(--radius-card);
+  padding: 26px 26px 20px;
 }
 
-.project-thumb{
-  background: var(--soft-gray);
-  border-radius: var(--radius);
-  height: 270px;
-  border: 1px solid transparent;
+/* media area inside card */
+.work-card__media {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.03);
+  height: 235px; /* close to your first-row cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.project-card:hover .project-thumb{
-  border-color: #dedede;
+.work-card__media--tall {
+  height: 260px; /* slightly taller feel like your bottom card */
 }
 
-.project-card--single{
-  grid-column: 1 / -1;
-  max-width: 520px;
+.work-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* swap to "contain" if you prefer no crop */
+  display: block;
 }
 
-/* TAGS */
-.tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap: 10px;
-  margin-top: 12px;
+/* tags row */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
 }
 
-.tag{
-  background: #f1f1f1;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 6px 10px;
-  font-size: 12px;
-  color: #6f6f6f;
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: var(--radius-tag);
+  background: var(--tag);
+  font-size: 11px;
+  color: #6b6b6b;
+  font-weight: 600;
 }
 
-/* FOOTER */
-.footer{
-  background: #2f2f2f;
-  color: #cfcfcf;
-  padding: 60px 0;
+/* Third card on its own row, left column only */
+.work-card--single {
+  grid-column: 1 / 2;
 }
 
-.footer-grid{
-  display:flex;
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: var(--footer);
+  color: var(--footer-text);
+  padding: 54px var(--page-pad-x) 50px;
+}
+
+.footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
   justify-content: space-between;
-  gap: 20px;
-  flex-wrap:wrap;
+  align-items: flex-end;
+  gap: 40px;
 }
 
-.footer-title{
-  margin: 0 0 16px;
-  font-size: 28px;
-  font-weight: 700;
-  color: #ff4a6e; /* close to your figma pink */
+.footer__title {
+  margin: 0 0 22px;
+  font-size: 22px;
+  font-weight: 800;
+
+  /* gives that pink-to-orange vibe like your screenshot */
+  background: linear-gradient(90deg, #ff3f8a, #ff9a3d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.footer-text{
+.footer__meta {
+  display: grid;
+  gap: 6px;
+}
+
+.footer__line {
   margin: 0;
+  font-size: 13px;
   color: #bdbdbd;
-  font-size: 14px;
-  line-height: 1.7;
 }
 
-.footer-link{
-  color: #dcdcdc;
+.footer__right {
+  display: flex;
+  gap: 46px;
 }
 
-.footer-links{
-  display:flex;
-  gap: 22px;
-  align-items:flex-end;
+.footer__link {
+  color: #bdbdbd;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
 }
 
-/* RESPONSIVE */
-@media (max-width: 980px){
-  .home-hero-grid{
+/* =========================
+   RESPONSIVE (keeps same look, just stacks)
+========================= */
+@media (max-width: 980px) {
+  :root {
+    --page-pad-x: 28px;
+  }
+
+  .hero__inner {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 26px;
   }
-  .home-hero-visual{
-    justify-content:flex-start;
+
+  .hero__art {
+    justify-content: flex-start;
   }
-  .home-section-title,
-  .projects-grid{
-    padding-left: 0;
-  }
-  .projects-grid{
+
+  .work-grid {
     grid-template-columns: 1fr;
   }
-  .project-card--single{
-    max-width: none;
-  }
-}
 
-@media (max-width: 560px){
-  .container{
-    width: min(var(--max), calc(100% - 32px));
+  .work-card--single {
+    grid-column: auto;
   }
-  .home-hero{
-    padding-top: 50px;
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .project-thumb{
-    height: 220px;
+
+  .footer__right {
+    gap: 22px;
+    margin-top: 18px;
   }
 }
