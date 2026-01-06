@@ -1,123 +1,164 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Ally Tishler</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ally Tishler — About</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html">Ally Tishler</a>
+  <body>
+    <!-- NAV -->
+    <header class="site-header">
+      <nav class="nav">
+        <div class="nav__brand">Ally Tishler</div>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        ☰
-      </button>
-
-      <nav id="site-nav" class="nav-links" aria-label="Primary">
-        <a href="index.html">Work</a>
-        <a class="active" href="about.html">About</a>
-        <a href="assets/Ally-Tishler-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html#work">Work</a></li>
+          <li><a class="nav__link nav__link--active" href="about.html">About</a></li>
+          <li><a class="nav__link" href="#resume">Resume</a></li>
+        </ul>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="section">
-      <div class="container about-hero">
-        <div class="about-copy">
-          <h1 class="h2-like">Learn more <span class="accent">about Ally</span></h1>
+    <main>
+      <!-- ABOUT HEADER -->
+      <section class="about-page">
+        <div class="about-page__inner">
+          <div class="about-hero">
+            <!-- LEFT: TITLE + PARAGRAPHS -->
+            <div class="about-hero__text">
+              <h1 class="about-hero__title">
+                Learn more <span class="about-hero__accent">about Ally</span>
+              </h1>
 
-          <p class="body">
-            I’m a UX researcher and designer with a background in human-centered design, serious games, and web development.
-            I’m currently finishing my master’s in Media and Information, where I focus on UX and HCI.
-          </p>
+              <div class="about-hero__body">
+                <p>
+                  I’m a UX researcher and designer with a background in human-centered design, serious
+                  games, and web development. I’m currently finishing my master’s in Media and
+                  Information, where I focus on UX and HCI.
+                </p>
 
-          <p class="body">
-            My work sits at the intersections of research, interaction design, and play. I’m especially interested in how people
-            learn, move through systems, and make sense of technology.
-          </p>
+                <p>
+                  My work sits at the intersections of research, interaction design, and play. I’m
+                  especially interested in how people learn, move through systems, and make sense of
+                  technology.
+                </p>
 
-          <p class="body">
-            Having a cross-cultural background has shaped the way I think about design. It’s made me more aware of how design can
-            influence inclusion, behavior, and the way people experience digital spaces.
-          </p>
+                <p>
+                  Having a cross-cultural background has shaped the way I think about design. It’s
+                  made me more aware of how design can influence inclusion, behavior, and the way
+                  people experience digital spaces.
+                </p>
+              </div>
+            </div>
+
+            <!-- RIGHT: PHOTO -->
+            <div class="about-hero__image-wrap">
+              <!-- IMAGE PLACEHOLDER (replace later) -->
+              <img
+                class="about-hero__image"
+                src="IMAGE_PLACEHOLDER"
+                alt="Portrait placeholder"
+              />
+            </div>
+          </div>
+
+          <!-- INFO GRID (2 columns x 2 rows) -->
+          <section class="about-info">
+            <div class="about-info__grid">
+              <!-- Areas of expertise -->
+              <div class="about-card">
+                <h2 class="about-card__title">
+                  <span class="about-card__icon">🖥️</span>
+                  Areas of expertise
+                </h2>
+
+                <ul class="about-list">
+                  <li>UX Research</li>
+                  <li>Usability Testing</li>
+                  <li>Interaction &amp; UI Design</li>
+                  <li>Game UX &amp; Player Experience (PX)</li>
+                  <li>Web Design &amp; Front-End Development</li>
+                  <li>Graphic Design</li>
+                </ul>
+
+                <p class="about-card__small">... and more!</p>
+              </div>
+
+              <!-- Current projects -->
+              <div class="about-card">
+                <h2 class="about-card__title">
+                  <span class="about-card__icon">💡</span>
+                  Current projects
+                </h2>
+
+                <div class="about-lines">
+                  <p>
+                    Sprout Steps - Master’s thesis project exploring<br />
+                    learning for adulting skills
+                  </p>
+
+                  <p>
+                    Purrcel - UX researcher &amp; UI designer on a<br />
+                    collaborative game project focused on grief and<br />
+                    reflection
+                  </p>
+                </div>
+              </div>
+
+              <!-- Personal interests -->
+              <div class="about-card">
+                <h2 class="about-card__title">
+                  <span class="about-card__icon">☕</span>
+                  Personal interests
+                </h2>
+
+                <ul class="about-list">
+                  <li>Travel</li>
+                  <li>Language Learning</li>
+                  <li>Music</li>
+                  <li>Art</li>
+                </ul>
+              </div>
+
+              <!-- Currently learning -->
+              <div class="about-card">
+                <h2 class="about-card__title">
+                  <span class="about-card__icon">🧑‍🎓</span>
+                  Currently learning
+                </h2>
+
+                <ul class="about-list">
+                  <li>Blender</li>
+                  <li>Unity</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (same as home) -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <h3 class="footer__title">Nice to see you here!</h3>
+
+          <div class="footer__meta">
+            <p class="footer__line">allyy.noel@gmail.com</p>
+            <p class="footer__line">This website is hand-coded and deployed through Github &amp; Netlify</p>
+            <p class="footer__line">Made with love © 2025 Allyson Tishler</p>
+          </div>
         </div>
 
-        <div class="about-photo">
-          <!-- Replace with your headshot later -->
-          <div class="media-placeholder media-photo" aria-label="Headshot placeholder"></div>
+        <div class="footer__right">
+          <a class="footer__link" href="#">LinkedIn</a>
+          <a class="footer__link" href="#">Github</a>
         </div>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-col">
-        <div class="list-block">
-          <h2 class="h3-like">🖥️ Areas of expertise</h2>
-          <ul class="clean-list">
-            <li>UX Research</li>
-            <li>Usability Testing</li>
-            <li>Interaction &amp; UI Design</li>
-            <li>Game UX &amp; Player Experience (PX)</li>
-            <li>Web Design &amp; Front-End Development</li>
-            <li>Graphic Design</li>
-            <li>… and more!</li>
-          </ul>
-        </div>
-
-        <div class="list-block">
-          <h2 class="h3-like">💡 Current projects</h2>
-          <ul class="clean-list">
-            <li>Sprout Steps — Master’s thesis project exploring learning for adulting skills</li>
-            <li>Purrcel — UX researcher &amp; UI designer on a collaborative game project focused on grief and reflection</li>
-          </ul>
-        </div>
-
-        <div class="list-block">
-          <h2 class="h3-like">☕ Personal interests</h2>
-          <ul class="clean-list">
-            <li>Travel</li>
-            <li>Language Learning</li>
-            <li>Music</li>
-            <li>Art</li>
-          </ul>
-        </div>
-
-        <div class="list-block">
-          <h2 class="h3-like">📚 Currently learning</h2>
-          <ul class="clean-list">
-            <li>Blender</li>
-            <li>Unity</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h2 class="footer-title">Nice to see you here!</h2>
-        <p class="footer-text">
-          <a class="footer-link" href="mailto:allyy.noel@gmail.com">allyy.noel@gmail.com</a><br />
-          This website is hand-coded and deployed through Github &amp; Netlify<br />
-          Made with love © 2025 Allyson Tishler
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <a class="footer-link" href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="footer-link" href="#" target="_blank" rel="noopener">Github</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    </footer>
+  </body>
 </html>
+
