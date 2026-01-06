@@ -21,6 +21,13 @@
 
   --radius-card: 22px;
   --radius-tag: 999px;
+
+  --gradient-accent: linear-gradient(
+    90deg,
+    #D52C69 0%,
+    #FF7A1A 50%,
+    #FFD60F 100%
+  );
 }
 
 * {
@@ -108,19 +115,14 @@ body {
 
 
 .highlight {
-  background: linear-gradient(
-    90deg,
-    #D52C69 0%,
-    #FF7A1A 50%,
-    #FFD60F 100%
-  );
-
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 
-  font-weight: 800; /* keeps it punchy like Figma */
+  font-weight: 800;
 }
+
 
 
 /* Illustration sizing similar to Figma */
@@ -272,12 +274,12 @@ body {
   font-size: 22px;
   font-weight: 800;
 
-  /* gives that pink-to-orange vibe like your screenshot */
-  background: linear-gradient(90deg, #D52C69 0%, #FF7A1A 50%, #FFD60F 100);
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
 
 
 .footer__meta {
