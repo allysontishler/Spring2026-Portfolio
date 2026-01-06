@@ -94,13 +94,18 @@ body {
   gap: 70px;
 }
 
+.hero__text {
+  max-width: 440px;
+}
+
 .hero__headline {
   margin: 0;
-  font-size: 18px;
-  line-height: 1.35;
+  font-size: 22px;       /* up from ~18px */
+  line-height: 1.35;     /* keeps vertical rhythm */
   font-weight: 700;
   letter-spacing: 0.1px;
 }
+
 
 .highlight {
   background: linear-gradient(
