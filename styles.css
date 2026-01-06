@@ -133,10 +133,10 @@ body {
 }
 
 .hero__img {
-  width: 1000px;
+  width: 600px;
   height: auto;
   display: block;
-  padding-left: 600px;
+  align-items: left;
 }
 
 /* =========================
