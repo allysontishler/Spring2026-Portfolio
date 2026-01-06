@@ -374,9 +374,13 @@ body {
   line-height: 1.25;
   font-weight: 800;
   letter-spacing: 0.1px;
-  background: var(--gradient-accent);
 }
 
+/* Orange “about Ally” in Figma (not gradient) */
+.about-hero__accent {
+  background: var(--gradient-accent);
+
+}
 
 .about-hero__body p {
   margin: 0 0 14px;
