@@ -273,11 +273,12 @@ body {
   font-weight: 800;
 
   /* gives that pink-to-orange vibe like your screenshot */
-  background: linear-gradient(90deg, #ff3f8a, #ff9a3d);
+  background: linear-gradient(90deg, #D52C69 0%, #FF7A1A 50%, #FFD60F 100);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
 
 .footer__meta {
   display: grid;
