@@ -653,7 +653,7 @@ body {
 
 .case-everytime .case-hero__phone {
   height: 70vh;        /* key line: scales to viewport height */
-  max-height: 550px;   /* prevents it from getting absurd on big screens */
+  max-height: 475px;   /* prevents it from getting absurd on big screens */
   width: auto;         /* keeps proportions correct */
   display: block;
 }
