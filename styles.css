@@ -50,8 +50,16 @@ body {
    NAV (top-left name, top-right links)
 ========================= */
 .site-header {
-  padding: var(--nav-top) var(--page-pad-x) 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  padding: var(--nav-top) var(--page-pad-x) 14px;
 }
+
 
 .nav {
   display: flex;
