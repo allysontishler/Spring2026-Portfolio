@@ -627,6 +627,7 @@ body {
   height: auto;
   display: block;
   margin-bottom: 26px;
+  padding-top: 26px;
 }
 
 .case-everytime .hero-strip__mask {
