@@ -632,7 +632,7 @@ body {
 
 /* Cropped row of 4 phones */
 .case-everytime .hero-strip__mask {
-  height: 250px;   /* tweak this ONE number to match your cutoff */
+  height: 300px;   /* tweak this ONE number to match your cutoff */
   overflow: hidden;
 }
 
