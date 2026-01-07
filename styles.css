@@ -652,10 +652,12 @@ body {
 }
 
 .case-everytime .case-hero__phone {
-  width: 360px;
-  height: auto;
+  height: 70vh;        /* key line: scales to viewport height */
+  max-height: 620px;   /* prevents it from getting absurd on big screens */
+  width: auto;         /* keeps proportions correct */
   display: block;
 }
+
 
 /* -------------------------
    RED CIRCLE — used in "My role" section (NOT hero)
