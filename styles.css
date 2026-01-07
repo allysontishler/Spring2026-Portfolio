@@ -561,14 +561,14 @@ body {
 
 .case-everytime .case-title {
   margin: 16px 0 18px;
-  font-size: 34px;
-  line-height: 1.08;
+  font-size: 30px;     /* ↓ smaller so it fits on one line */
+  line-height: 1.15;   /* slightly looser for readability */
   font-weight: 800;
   color: #111;
-
-  /* keeps your line breaks looking like Figma */
-  max-width: 42ch;
+  max-width: none;     /* IMPORTANT: allow full column width */
 }
+
+
 
 .case-everytime .case-deck {
   margin: 0;
@@ -632,7 +632,7 @@ body {
 }
 
 .case-everytime .hero-strip__mask {
-  height: 300px;        /* controls how much is cut off at the bottom */
+  height: 320px;        /* controls how much is cut off at the bottom */
   overflow: hidden;    /* crops bottom ONLY because width is full */
   width: 100%;         /* IMPORTANT: prevents right-side clipping */
 }
