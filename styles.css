@@ -621,6 +621,7 @@ body {
 
 .case-everytime .hero-visual {
   margin-top: 60px; /* places logo + phone row lower like Figma */
+  height: 600px;
 }
 
 .case-everytime .hero-logo {
