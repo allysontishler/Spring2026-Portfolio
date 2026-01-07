@@ -562,6 +562,82 @@ body {
   max-width: 62ch;
 }
 
+.case-title--hero {
+  margin: 0 0 18px;
+  font-size: 34px;     /* big headline like your screenshot */
+  line-height: 1.08;
+  font-weight: 800;
+  max-width: 26ch;     /* forces similar line breaks */
+}
+
+.case-deck {
+  margin: 0 0 28px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #111;
+  max-width: 62ch;
+}
+
+/* Left visual block (logo + masked strip) */
+.hero-visual {
+  margin-top: 36px; /* pushes the visuals down like Figma */
+}
+
+.hero-logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 26px;
+}
+
+/* Masked strip of 4 screens */
+.hero-strip__mask {
+  height: 170px;       /* tweak this number to match the cutoff */
+  overflow: hidden;
+}
+
+.hero-strip__img {
+  width: 720px;        /* keeps strip from stretching to full column */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Right phone */
+.case-hero__right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.case-hero__phone {
+  width: 360px;   /* big phone like Figma */
+  height: auto;
+  display: block;
+}
+
+/* Red circle callout positioned like prototype */
+.stat-bubble {
+  position: absolute;
+  right: 40px;
+  top: 520px;     /* main positioning knob */
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: var(--case-red);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 22px;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
 .case-hero__meta {
   margin-top: 10px;
   display: grid;
@@ -617,14 +693,22 @@ body {
 
 /* hero layout */
 .case-hero {
-  padding: 62px 0 18px;
+  padding: 86px 0 32px;
 }
 
 .case-hero__grid {
   display: grid;
-  grid-template-columns: 1fr 330px;
+  grid-template-columns: 1fr 460px; /* big right column like Figma */
   gap: 70px;
   align-items: start;
+}
+
+.case-kicker--muted {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--case-muted); /* #9F9F9D */
+  font-weight: 500;
 }
 
 .case-hero__right {
@@ -852,3 +936,10 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* TEMP DEBUG — remove later */
+.case-everytime .case-inner { outline: 1px solid rgba(255,0,0,0.2); }
+.case-everytime .case-hero__grid { outline: 1px solid rgba(0,0,255,0.2); }
+.case-everytime .case-hero__left,
+.case-everytime .case-hero__right { outline: 1px solid rgba(0,128,0,0.2); }
