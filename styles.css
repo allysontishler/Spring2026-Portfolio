@@ -631,16 +631,16 @@ body {
   margin-bottom: 26px;
 }
 
-/* Cropped row of 4 phones */
 .case-everytime .hero-strip__mask {
-  height: 300px;   /* tweak this ONE number to match your cutoff */
-  overflow: hidden;
-  width: 200px;
+  height: 300px;        /* controls how much is cut off at the bottom */
+  overflow: hidden;    /* crops bottom ONLY because width is full */
+  width: 100%;         /* IMPORTANT: prevents right-side clipping */
 }
 
 .case-everytime .hero-strip__img {
   width: 680px;    /* keeps row from stretching too wide */
   height: auto;
+  max-width: 100%;
   display: block;
 }
 
