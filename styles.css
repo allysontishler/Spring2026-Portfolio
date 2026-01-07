@@ -938,8 +938,3 @@ body {
 }
 
 
-/* TEMP DEBUG — remove later */
-.case-everytime .case-inner { outline: 1px solid rgba(255,0,0,0.2); }
-.case-everytime .case-hero__grid { outline: 1px solid rgba(0,0,255,0.2); }
-.case-everytime .case-hero__left,
-.case-everytime .case-hero__right { outline: 1px solid rgba(0,128,0,0.2); }
