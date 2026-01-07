@@ -627,11 +627,11 @@ body {
   height: auto;
   display: block;
   margin-bottom: 26px;
-  padding-top: 26px;
+  padding-top: 36px;
 }
 
 .case-everytime .hero-strip__mask {
-  height: 320px;        /* controls how much is cut off at the bottom */
+  height: 300px;        /* controls how much is cut off at the bottom */
   overflow: hidden;    /* crops bottom ONLY because width is full */
   width: 100%;         /* IMPORTANT: prevents right-side clipping */
 }
