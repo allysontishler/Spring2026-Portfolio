@@ -635,6 +635,7 @@ body {
 .case-everytime .hero-strip__mask {
   height: 300px;   /* tweak this ONE number to match your cutoff */
   overflow: hidden;
+  width: 200px;
 }
 
 .case-everytime .hero-strip__img {
