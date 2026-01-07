@@ -14,7 +14,7 @@
 
   /* Page geometry to mimic your Figma whitespace */
   --page-pad-x: 80px;
-  --nav-top: 48px;
+  --nav-top: 28px;
 
   /* Central content width seen in Figma */
   --content-max: 920px;
