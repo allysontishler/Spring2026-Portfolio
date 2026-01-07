@@ -607,12 +607,11 @@ body {
 
 .case-everytime .case-hero__grid {
   display: grid;
-
-  /* LEFT is wide so text isn’t smushed; RIGHT holds phone */
-  grid-template-columns: 640px 1fr;
-  column-gap: 90px;
+  grid-template-columns: 1fr auto; /* 🔑 key change */
   align-items: start;
+  column-gap: 48px;               /* smaller gap like Figma */
 }
+
 
 .case-everytime .case-hero__left {
   /* nothing special needed; width controlled by grid */
@@ -651,11 +650,11 @@ body {
 }
 
 .case-everytime .case-hero__phone {
-  height: 70vh;        /* key line: scales to viewport height */
-  max-height: 475px;   /* prevents it from getting absurd on big screens */
-  width: auto;         /* keeps proportions correct */
-  display: block;
+  height: 70vh;
+  max-height: 475px;
+  width: auto;
 }
+
 
 
 /* -------------------------
