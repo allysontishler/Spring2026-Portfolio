@@ -501,3 +501,354 @@ body {
     column-gap: 0;
   }
 }
+
+
+
+
+
+
+/* =========================
+   EVERYTIME CASE STUDY (scoped; paste at bottom of styles.css)
+========================= */
+.case-everytime {
+  --case-red: #f91f15;
+  --case-muted: #9f9f9d;
+  --case-pink: #fff3f3;
+  --case-gray: #f5f5f5;
+}
+
+.case-everytime main {
+  padding-bottom: 40px;
+}
+
+.case-inner {
+  max-width: 1040px; /* matches your 1512-wide Figma feel */
+  margin: 0 auto;
+  padding: 0 var(--page-pad-x);
+}
+
+/* section spacing */
+.case-section {
+  padding: 78px 0;
+}
+
+.case-block {
+  padding: 78px 0;
+}
+
+.case-block--gray {
+  background: var(--case-gray);
+}
+
+.case-block--pink {
+  background: var(--case-pink);
+}
+
+/* typography */
+.case-kicker {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #222;
+}
+
+.case-title {
+  margin: 0 0 18px;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #111;
+  max-width: 62ch;
+}
+
+.case-hero__meta {
+  margin-top: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.case-meta-line {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.case-meta-label {
+  font-weight: 800;
+}
+
+.case-section__title {
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18px;
+  text-transform: none; /* keep like your Figma */
+  color: #111;
+}
+
+.case-subtitle {
+  margin: 18px 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #111;
+}
+
+.case-subtitle--red {
+  color: var(--case-red);
+}
+
+.case-body {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: #2b2b2b;
+  max-width: 78ch;
+}
+
+.case-body + .case-body {
+  margin-top: 12px;
+}
+
+.case-body--tight {
+  max-width: 60ch;
+}
+
+/* hero layout */
+.case-hero {
+  padding: 62px 0 18px;
+}
+
+.case-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 70px;
+  align-items: start;
+}
+
+.case-hero__right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.case-hero__phone {
+  width: 260px;
+  height: auto;
+  display: block;
+}
+
+/* left hero strip mask (for cut-off screens) */
+.hero-strip {
+  margin-top: 18px;
+}
+
+.hero-strip__mask {
+  height: 130px; /* tweak this to match your exact Figma cut-off */
+  overflow: hidden;
+}
+
+.hero-strip__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* red circle callout */
+.stat-bubble {
+  width: 170px;
+  height: 170px;
+  border-radius: 999px;
+  background: var(--case-red);
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 18px;
+
+  /* positions it like your Figma (tweakable) */
+  margin-top: 18px;
+}
+
+/* features & iterations rows */
+.feature-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: start;
+  padding: 34px 0;
+}
+
+.feature-row + .feature-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.feature-row__img {
+  width: 220px;
+  height: auto;
+  display: block;
+}
+
+.feature-row__text {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px; /* helps “paragraph feels centered” like your Figma */
+}
+
+.feature-row__title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--case-red);
+}
+
+.feature-row__desc {
+  margin: 0;
+  margin-top: auto; /* pushes the paragraph down into the “middle-ish” */
+  margin-bottom: auto;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--case-muted);
+  max-width: 56ch;
+}
+
+/* generic media */
+.case-media {
+  margin-top: 18px;
+}
+
+.case-media--center {
+  display: flex;
+  justify-content: center;
+}
+
+.case-media__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.case-media__img--narrow {
+  max-width: 520px;
+}
+
+/* key findings */
+.key-findings {
+  margin-top: 26px;
+}
+
+.key-findings__grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.key-circle {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-circle__value {
+  font-size: 14px;
+  font-weight: 900;
+  color: #111;
+}
+
+/* personas */
+.persona-stack {
+  margin-top: 18px;
+  display: grid;
+  gap: 18px;
+}
+
+.persona-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* journey maps */
+.journey-stack {
+  margin-top: 18px;
+  display: grid;
+  gap: 26px;
+}
+
+.journey-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* tables (allow horizontal scroll on small screens) */
+.table-wrap {
+  margin-top: 18px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-width: 760px; /* keeps tables readable; scrolls on small screens */
+}
+
+/* =========================
+   EVERYTIME RESPONSIVE
+========================= */
+@media (max-width: 980px) {
+  .case-inner {
+    padding: 0 var(--page-pad-x);
+  }
+
+  .case-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .case-hero__right {
+    align-items: flex-start;
+  }
+
+  .stat-bubble {
+    margin-top: 14px;
+  }
+
+  .feature-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-row__img {
+    width: 220px;
+  }
+
+  .feature-row__text {
+    min-height: auto;
+  }
+
+  .feature-row__desc {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .key-findings__grid {
+    grid-template-columns: 1fr;
+  }
+}
