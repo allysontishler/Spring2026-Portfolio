@@ -650,18 +650,19 @@ body {
 
 .case-everytime .feature-row__title{
   margin: 0 0 10px;
-  font-size: 22px;            /* big red title */
+  font-size: 28px;            /* big red title */
   line-height: 1.15;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--case-red);
 }
 
 .case-everytime .feature-row__desc {
   align-self: center;   /* ✅ vertically centers description */
   margin: 0;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.75;
   color: var(--case-muted);
+  max-width: 30px;
 }
 
 
