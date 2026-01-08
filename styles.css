@@ -633,8 +633,9 @@ body {
 }
 
 .case-everytime .feature-row--reverse .feature-row__text{
-  grid-column: 2;
+  grid-column: 1;
   justify-self: center;   /* ✅ keeps it feeling “in the column”, not shoved weirdly */
+  margin-bottom: 50px;
 }
 
 /* MEDIA (generic) */
