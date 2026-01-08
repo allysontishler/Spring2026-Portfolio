@@ -603,48 +603,98 @@ body {
 
 
 
-/* FEATURES & ITERATIONS */
-.case-everytime .feature-row {
+/* =========================
+   FEATURES & ITERATIONS
+========================= */
+
+.case-everytime .features-title{
+  margin: 0 0 26px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+}
+
+/* one row = phone + text */
+.case-everytime .feature-row{
+  max-width: 920px;           /* keeps it centered like the rest of your case sections */
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 48px;
-  align-items: start;
-  padding: 34px 0;
+  grid-template-columns: 360px 1fr;  /* phone column + text column */
+  gap: 90px;
+  align-items: center;
+
+  padding: 62px 0;
 }
 
-.case-everytime .feature-row + .feature-row {
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+/* divider between rows like Figma */
+.case-everytime .feature-row + .feature-row{
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
-.case-everytime .feature-row__img {
-  width: 240px;
+/* phone sizing */
+.case-everytime .feature-row__img{
+  width: 100%;
+  max-width: 360px;
   height: auto;
   display: block;
+  justify-self: center;
 }
 
-.case-everytime .feature-row__text {
-  display: flex;
-  flex-direction: column;
-  min-height: 360px;
+/* text block */
+.case-everytime .feature-row__text{
+  max-width: 380px;           /* keeps the text “tight” like your Figma */
 }
 
-.case-everytime .feature-row__title {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 600;
+.case-everytime .feature-row__title{
+  margin: 0 0 10px;
+  font-size: 22px;            /* big red title */
+  line-height: 1.15;
+  font-weight: 800;
   color: var(--case-red);
 }
 
-.case-everytime .feature-row__desc {
+.case-everytime .feature-row__desc{
   margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-
-  font-size: 12px;
-  line-height: 1.65;
+  font-size: 13px;
+  line-height: 1.75;
   color: var(--case-muted);
-  max-width: 56ch;
 }
+
+/* alternate layout */
+.case-everytime .feature-row--reverse{
+  grid-template-columns: 1fr 360px;
+}
+
+.case-everytime .feature-row--reverse .feature-row__img{
+  grid-column: 2;
+}
+
+.case-everytime .feature-row--reverse .feature-row__text{
+  grid-column: 1;
+  justify-self: end;          /* pulls the text in so it doesn’t look too wide */
+}
+
+/* responsive */
+@media (max-width: 980px){
+  .case-everytime .feature-row,
+  .case-everytime .feature-row--reverse{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 40px 0;
+    max-width: 520px;
+  }
+
+  .case-everytime .feature-row--reverse .feature-row__img,
+  .case-everytime .feature-row--reverse .feature-row__text{
+    grid-column: auto;
+    justify-self: start;
+  }
+
+  .case-everytime .feature-row__text{
+    max-width: 52ch;
+  }
+}
+
 
 /* MEDIA (generic) */
 .case-everytime .case-media { margin-top: 18px; }
