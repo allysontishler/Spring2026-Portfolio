@@ -448,7 +448,7 @@ body {
 /* My Role becomes narrower like Figma */
 .case-everytime .my-role {
   margin-top: 34px;      /* spacing between sections */
-  max-width: 70ch;       /* 🔥 the condensed width */
+  max-width: 75ch;       /* 🔥 the condensed width */
 }
 
 .case-everytime .my-role .case-body {
