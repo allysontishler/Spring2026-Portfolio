@@ -438,9 +438,21 @@ body {
   max-width: 200ch;
 }
 
-/* Add comfortable spacing between paragraphs in overview text */
-.case-everytime .overview-left .case-body + .case-body {
-  margin-top: 16px;
+
+/* Project Brief stays wide */
+.case-everytime .project-brief .case-body {
+  max-width: 95ch;
+}
+
+/* My Role becomes narrower like Figma */
+.case-everytime .my-role {
+  margin-top: 34px;      /* spacing between sections */
+  max-width: 48ch;       /* 🔥 the condensed width */
+}
+
+.case-everytime .my-role .case-body {
+  max-width: none;       /* so it obeys the parent width */
+  line-height: 1.7;      /* slightly denser like Figma */
 }
 
 
@@ -494,15 +506,11 @@ body {
   width: auto;
 }
 
-/* OVERVIEW GRID (gray block) */
-.case-everytime .overview-grid {
-  position: relative;
-  display: block;         
-}
 
 .case-everytime .overview-right {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .case-everytime .overview-divider {
