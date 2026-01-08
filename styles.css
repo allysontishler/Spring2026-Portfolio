@@ -445,6 +445,16 @@ body {
   max-width: 120ch;
 }
 
+/* Divider under "Individual Project" */
+.case-everytime .role-divider {
+  width: 48px;                  /* short, elegant line */
+  height: 2px;                  /* line thickness */
+  background: rgba(0, 0, 0, 0.15);
+  margin: 14px 0 18px;          /* space above + below */
+  border-radius: 2px;
+}
+
+
 /* My Role becomes narrower like Figma */
 .case-everytime .my-role {
   margin-top: 34px;      /* spacing between sections */
