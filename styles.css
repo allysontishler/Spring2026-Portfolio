@@ -343,6 +343,23 @@ body {
   color: #2f2f2f;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================
    EVERYTIME CASE STUDY (SCOPED)
 ========================= */
@@ -431,7 +448,7 @@ body {
 
 .case-everytime .hero-visual {
   margin-top: 60px;
-  height: 600px;
+  height: auto;
 }
 
 .case-everytime .hero-logo {
