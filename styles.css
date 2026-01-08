@@ -509,10 +509,8 @@ body {
 
 /* OVERVIEW GRID (gray block) */
 .case-everytime .overview-grid {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 56px;
-  align-items: start;
+  position: relative;
+  display: block;         
 }
 
 .case-everytime .overview-right {
