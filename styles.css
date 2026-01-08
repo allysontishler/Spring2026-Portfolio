@@ -429,13 +429,6 @@ body {
   max-width: 62ch;
 }
 
-.case-everytime .case-section__title {
-  margin: 0 0 14px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.18px;
-  color: #111;
-}
 
 .case-everytime .case-body {
   margin: 0;
