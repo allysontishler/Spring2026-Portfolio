@@ -704,6 +704,20 @@ body {
   }
 }
 
+.case-everytime .feature-row.feature-row--reverse{
+  grid-template-columns: 1fr 360px !important;
+}
+
+.case-everytime .feature-row.feature-row--reverse .feature-row__img{
+  grid-column: 2 !important;
+}
+
+.case-everytime .feature-row.feature-row--reverse .feature-row__text{
+  grid-column: 1 !important;
+  justify-self: end;
+}
+
+
 
 /* MEDIA (generic) */
 .case-everytime .case-media { margin-top: 18px; }
