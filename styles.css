@@ -619,7 +619,6 @@ body {
 
 .case-everytime .feature-row--reverse .feature-row__img{
   grid-column: 2;
-  height: 600px;
 }
 
 .case-everytime .feature-row--reverse .feature-row__text{
