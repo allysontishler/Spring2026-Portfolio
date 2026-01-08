@@ -682,7 +682,7 @@ body {
 }
 
 /* responsive */
-@media (max-width: 980px){
+@media (max-width: 760px){
   .case-everytime .feature-row,
   .case-everytime .feature-row--reverse{
     grid-template-columns: 1fr;
