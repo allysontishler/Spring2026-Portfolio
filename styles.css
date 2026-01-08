@@ -395,7 +395,7 @@ body {
 /* Typography */
 .case-everytime .case-kicker {
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 350;
   color: var(--case-muted);
@@ -406,7 +406,7 @@ body {
 .case-everytime .case-section--overview .case-kicker {
   color: var(--case-red);
   font-weight: 800;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.18px;
 }
 
