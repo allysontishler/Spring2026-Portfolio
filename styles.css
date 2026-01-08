@@ -436,13 +436,13 @@ body {
   font-size: 13px;
   line-height: 1.75;
   color: #2b2b2b;
-  max-width: 300ch;
+  max-width: 200ch;
 }
 
 
 /* Project Brief stays wide */
 .case-everytime .project-brief .case-body {
-  max-width: 95ch;
+  max-width: 120ch;
 }
 
 /* My Role becomes narrower like Figma */
