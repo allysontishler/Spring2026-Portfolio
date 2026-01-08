@@ -831,8 +831,5 @@ body {
   .case-everytime .overview-right { justify-content: flex-start; }
   .case-everytime .role-bubble { margin-top: 10px; }
 
-  .case-everytime .feature-row { grid-template-columns: 1fr; gap: 16px; }
-  .case-everytime .feature-row__text { min-height: auto; }
-  .case-everytime .feature-row__desc { margin-top: 10px; margin-bottom: 0; }
   .case-everytime .key-findings__grid { grid-template-columns: 1fr; }
 }
