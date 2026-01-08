@@ -735,7 +735,7 @@ body {
    KEY FINDINGS (Research section)
 ========================= */
 .case-everytime .keyfindings {
-  margin-top: 36px;
+  margin-top: 78px;
 }
 
 .case-everytime .keyfindings__title{
@@ -745,10 +745,13 @@ body {
   color: #111;
 }
 
-.case-everytime .keyfindings__grid{
+.case-everytime .keyfindings__grid {
+  max-width: 920px;   /* 🔥 THIS is the magic number */
+  margin: 36px auto 0;
+
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;          /* controls distance between left & right */
   align-items: start;
 }
 
