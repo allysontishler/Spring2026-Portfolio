@@ -524,13 +524,27 @@ body {
   justify-content: center;
   text-align: center;
 
-  padding: 8px;
+  padding: 0;
   font-size: 14px;
   line-height: 1.25;
   font-weight: 800;
 
   margin-top: 0; 
   margin-bottom: -120px;
+}
+
+.case-everytime .bubble-text {
+  display: inline-block;
+  width: 70%;              /* controls line length so it breathes */
+  transform: translateY(-4px); /* tiny optical nudge upward */
+  font-size: 18px;         /* bump until it matches Figma */
+  line-height: 1.15;       /* less condensed */
+  font-weight: 650;        /* less bold base */
+  letter-spacing: -0.2px;  /* subtle, makes it feel less cramped */
+}
+
+.case-everytime .bubble-em {
+  font-weight: 850;        /* ✅ bold emphasis */
 }
 
 
