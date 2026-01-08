@@ -513,7 +513,7 @@ body {
 }
 
 .case-everytime .role-bubble{
-  margin-top: 350px;        /* pushes it down inside gray */
+  margin-top: 400px;        /* pushes it down inside gray */
   margin-bottom: -80px;    /* reduces how far it jumps upward visually */
 }
 
