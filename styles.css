@@ -535,13 +535,16 @@ body {
 
 .case-everytime .bubble-text {
   display: inline-block;
-  width: 70%;              /* controls line length so it breathes */
-  transform: translateY(-4px); /* tiny optical nudge upward */
-  font-size: 18px;         /* bump until it matches Figma */
-  line-height: 1.15;       /* less condensed */
-  font-weight: 650;        /* less bold base */
-  letter-spacing: -0.2px;  /* subtle, makes it feel less cramped */
+  width: 70%;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 650;
+  letter-spacing: -0.2px;
+
+  /* ✅ push text higher since circle is cropped */
+  transform: translateY(-48px);
 }
+
 
 .case-everytime .bubble-em {
   font-weight: 850;        /* ✅ bold emphasis */
