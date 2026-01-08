@@ -640,10 +640,13 @@ body {
   justify-self: center;
 }
 
-/* text block */
-.case-everytime .feature-row__text{
-  max-width: 380px;           /* keeps the text “tight” like your Figma */
+.case-everytime .feature-row__text {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  max-width: 380px;
 }
+
 
 .case-everytime .feature-row__title{
   margin: 0 0 10px;
@@ -653,12 +656,14 @@ body {
   color: var(--case-red);
 }
 
-.case-everytime .feature-row__desc{
+.case-everytime .feature-row__desc {
+  align-self: center;   /* ✅ vertically centers description */
   margin: 0;
   font-size: 13px;
   line-height: 1.75;
   color: var(--case-muted);
 }
+
 
 /* alternate layout */
 .case-everytime .feature-row--reverse{
