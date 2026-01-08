@@ -507,9 +507,6 @@ body {
 
 
 
-
-
-
 /* =========================
    EVERYTIME CASE STUDY (SCOPED)
    Replace your entire existing Everytime block with this
@@ -547,6 +544,7 @@ body {
   padding-top: 0;
 }
 
+
 .case-everytime .case-block--gray {
   background: var(--case-gray);
 }
@@ -562,7 +560,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 350;
   color: var(--case-muted);
 }
 
@@ -634,7 +632,7 @@ body {
   height: auto;
   display: block;
   margin-bottom: 26px;
-  padding-top: 65px;
+  padding-top: 50px;
 }
 
 .case-everytime .hero-strip__mask {
