@@ -808,35 +808,44 @@ body {
 }
 
 
-/* Metric row */
-.case-everytime .keycallout--metric{
+/* =========================
+   KEY FINDING METRIC (RING)
+========================= */
+
+.case-everytime .keycallout--metric {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 18px;
 }
 
-.case-everytime .metric-circle{
+/* Ring circle */
+.case-everytime .metric-circle {
   width: 96px;
   height: 96px;
-  border-radius: 999px;
-  background: rgba(0,0,0,0.04);
+  border-radius: 50%;
+
+  background: #fff;                 /* hollow center */
+  border: 10px solid #e6e6e6;        /* thick gray ring */
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.case-everytime .metric-circle__value{
+/* Percentage text */
+.case-everytime .metric-circle__value {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 800;
   color: #111;
 }
 
-.case-everytime .metric-label{
-  font-size: 10.5px;
+/* Label text */
+.case-everytime .metric-label {
+  font-size: 13px;
   line-height: 1.6;
-  color: #111;
-  white-space: nowrap;
+  color: #2b2b2b;
 }
+
 
 /* Bottom red note */
 .case-everytime .keycallout--note{
@@ -909,7 +918,7 @@ body {
 
 .case-everytime .key-circle__value {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 600;
   color: #111;
 }
 
