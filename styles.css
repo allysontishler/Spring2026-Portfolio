@@ -784,16 +784,29 @@ body {
   justify-items: center; /* centers boxes like your Figma */
 }
 
-.case-everytime .keycallout--quote{
-  max-width: 340px;
-  padding: 12px;
+/* Quote callout (pink fill + even padding) */
+.case-everytime .kf-quote {
+  background: var(--case-pink);                 /* ✅ filled */
   border: 1px solid var(--case-red);
   border-radius: 10px;
-  color: var(--case-red);
-  font-size: 10.5px;
-  line-height: 1.55;
+
+  padding: 16px 18px;                            /* ✅ even top/bottom */
+  display: flex;
+  align-items: center;                           /* ✅ centers text vertically */
+  justify-content: center;
   text-align: center;
+
+  color: var(--case-red);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
 }
+
+/* if your quote text is a <p>, kill default margins */
+.case-everytime .kf-quote p {
+  margin: 0;                                     /* ✅ fixes “bottom padding looks bigger” */
+}
+
 
 /* Metric row */
 .case-everytime .keycallout--metric{
