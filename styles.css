@@ -628,14 +628,8 @@ body {
   grid-template-columns: 1fr 360px;
 }
 
-.case-everytime .feature-row--reverse .feature-row__img{
-  grid-column: 2;
-}
 
-.case-everytime .feature-row--reverse .feature-row__text{
-  grid-column: 1;
-  justify-self: center;   /* ✅ keeps it feeling “in the column”, not shoved weirdly */
-}
+
 
 /* MEDIA (generic) */
 .case-everytime .case-media { margin-top: 18px; }
