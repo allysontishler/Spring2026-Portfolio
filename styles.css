@@ -507,6 +507,9 @@ body {
 
 
 
+
+
+
 /* =========================
    EVERYTIME CASE STUDY (SCOPED)
    Replace your entire existing Everytime block with this
@@ -519,7 +522,7 @@ body {
 }
 
 .case-everytime main {
-  padding-bottom: 0px;
+  padding-bottom: 40px;
 }
 
 /* Wider than homepage to match your 1512px Figma frame */
@@ -540,6 +543,10 @@ body {
   padding: 72px 0;
 }
 
+.case-everytime .case-block--flush-top {
+  padding-top: 0;
+}
+
 .case-everytime .case-block--gray {
   background: var(--case-gray);
 }
@@ -555,7 +562,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 350;
+  font-weight: 400;
   color: var(--case-muted);
 }
 
@@ -602,7 +609,7 @@ body {
    (Text + phone on top row; logo+phones under left)
 ------------------------- */
 .case-everytime .case-hero {
-  padding: 72px 0 0;
+  padding: 0;
 }
 
 .case-everytime .case-hero__grid {
