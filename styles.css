@@ -9,14 +9,11 @@
   --footer: #2f2f2f;
   --footer-text: #cfcfcf;
 
-  /* This is the orange accent in your hero line */
   --accent: #ff7a1a;
 
-  /* Page geometry to mimic your Figma whitespace */
   --page-pad-x: 80px;
   --nav-top: 28px;
 
-  /* Central content width seen in Figma */
   --content-max: 920px;
 
   --radius-card: 22px;
@@ -31,7 +28,6 @@
 }
 
 * { box-sizing: border-box; }
-
 html, body { margin: 0; padding: 0; }
 
 body {
@@ -41,7 +37,7 @@ body {
 }
 
 /* =========================
-   NAV (top-left name, top-right links)
+   NAV
 ========================= */
 .site-header {
   position: sticky;
@@ -87,7 +83,7 @@ body {
 }
 
 /* =========================
-   HOME HERO (homepage)
+   HOME HERO
 ========================= */
 .hero {
   padding: 120px var(--page-pad-x) 0;
@@ -157,7 +153,6 @@ body {
   gap: 28px;
 }
 
-/* Image-only cards */
 .work-card {
   display: flex;
   flex-direction: column;
@@ -245,7 +240,7 @@ body {
 }
 
 /* =========================
-   ABOUT PAGE (matches About-Page Figma)
+   ABOUT PAGE
 ========================= */
 .about-page {
   padding: 110px var(--page-pad-x) 120px;
@@ -367,25 +362,19 @@ body {
 .case-everytime .case-block--gray { background: var(--case-gray); }
 .case-everytime .case-block--pink { background: var(--case-pink); }
 
-/* FIX: snap gray overview closer to hero */
-.case-everytime .case-hero + .case-section {
-  padding-top: 34px;
-}
+/* Snap overview closer to hero */
+.case-everytime .case-hero + .case-section { padding-top: 34px; }
 
 /* Typography */
 .case-everytime .case-kicker {
-  margin: 0;
+  margin: 0 0 14px;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 350;
   color: var(--case-muted);
-  margin-bottom: 14px;
-
-  /* NOTE: you had this. keep/remove if needed */
-  margin-top: 100px;
 }
 
-/* OVERVIEW kicker: red + slightly heavier */
+/* OVERVIEW kicker: red */
 .case-everytime .case-section--overview .case-kicker {
   color: var(--case-red);
   font-weight: 800;
@@ -419,31 +408,6 @@ body {
 }
 
 .case-everytime .case-body--muted { color: var(--case-muted); }
-
-/* Project Brief stays wide */
-.case-everytime .project-brief .case-body {
-  max-width: 120ch;
-}
-
-/* Divider under "Individual Project" */
-.case-everytime .role-divider {
-  width: 48px;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.15);
-  margin: 14px 0 18px;
-  border-radius: 2px;
-}
-
-/* My Role becomes narrower like Figma */
-.case-everytime .my-role {
-  margin-top: 34px;
-  max-width: 70ch;
-}
-
-.case-everytime .my-role .case-body {
-  max-width: none;
-  line-height: 1.7;
-}
 
 /* HERO */
 .case-everytime .case-hero { padding: 72px 0 0; }
@@ -493,20 +457,42 @@ body {
   width: auto;
 }
 
-/* OVERVIEW layout */
+/* OVERVIEW */
+.case-everytime .overview-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 56px;
+  align-items: start;
+}
+
+.case-everytime .project-brief .case-body { max-width: 120ch; }
+
+.case-everytime .my-role {
+  margin-top: 34px;
+  max-width: 70ch;
+}
+
+.case-everytime .my-role .case-body {
+  max-width: none;
+  line-height: 1.7;
+}
+
+/* Divider under "Individual Project" */
+.case-everytime .role-divider {
+  width: 48px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 14px 0 18px;
+  border-radius: 2px;
+}
+
+/* bubble */
 .case-everytime .overview-right {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
 
-.case-everytime .overview-divider {
-  height: 1px;
-  background: rgba(0, 0, 0, 0.08);
-  margin: 26px 0;
-}
-
-/* Red bubble */
 .case-everytime .role-bubble {
   width: 280px;
   height: 280px;
@@ -520,9 +506,7 @@ body {
   text-align: center;
 
   padding: 0;
-  font-size: 14px;
   line-height: 1.25;
-  font-weight: 800;
 
   margin-top: 0;
   margin-bottom: -120px;
@@ -540,11 +524,8 @@ body {
 
 .case-everytime .bubble-em { font-weight: 850; }
 
-/* Ensure sections can layer */
-.case-everytime .case-block--gray {
-  position: relative;
-  z-index: 1;
-}
+/* Layering: bubble cut by next section */
+.case-everytime .case-block--gray { position: relative; z-index: 1; }
 
 .case-everytime .case-section--target {
   position: relative;
@@ -554,10 +535,8 @@ body {
   padding-bottom: 56px;
 }
 
-/* OUTCOME (pink block between Target Users and Features) */
-.case-everytime .case-section--outcome {
-  padding: 56px 0;
-}
+/* OUTCOME */
+.case-everytime .case-section--outcome { padding: 56px 0; }
 
 .case-everytime .outcome-title {
   margin: 0 0 14px;
@@ -567,12 +546,10 @@ body {
   color: var(--case-red);
 }
 
-.case-everytime .outcome-body {
-  max-width: 120ch;
-}
+.case-everytime .outcome-body { max-width: 120ch; }
 
 /* =========================
-   FEATURES & ITERATIONS
+   FEATURES & ITERATIONS  ✅ FIXED
 ========================= */
 .case-everytime .features-title{
   margin: 0 0 26px;
@@ -581,23 +558,25 @@ body {
   color: #111;
 }
 
-/* one row = phone + text */
 .case-everytime .feature-row{
   max-width: 920px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 90px;
+
+  /* IMPORTANT: we want the row height to match the phone,
+     and the text block to center within that height */
   align-items: stretch;
+
   padding: 62px 0;
 }
 
-/* divider between rows like Figma */
 .case-everytime .feature-row + .feature-row{
   border-top: 1px solid rgba(0,0,0,0.08);
 }
 
-/* phone sizing */
 .case-everytime .feature-row__img{
   width: 100%;
   max-width: 360px;
@@ -606,16 +585,19 @@ body {
   justify-self: center;
 }
 
-/* text block */
+/* ✅ This is the real fix: center the *whole text block* vertically,
+   not the description using auto margins */
 .case-everytime .feature-row__text{
+  max-width: 380px;
+  align-self: stretch;
+
   display: flex;
   flex-direction: column;
-  align-self: stretch;
-  max-width: 380px;
+  justify-content: center; /* ✅ centers title+desc as a group */
 }
 
 .case-everytime .feature-row__title{
-  margin: 0 0 10px;
+  margin: 0;
   font-size: 28px;
   line-height: 1.15;
   font-weight: 600;
@@ -623,8 +605,7 @@ body {
 }
 
 .case-everytime .feature-row__desc{
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 14px 0 0; /* ✅ normal spacing instead of auto margins */
   font-size: 16px;
   line-height: 1.75;
   color: var(--case-muted);
@@ -642,28 +623,7 @@ body {
 
 .case-everytime .feature-row--reverse .feature-row__text{
   grid-column: 1;
-  justify-self: end;
-}
-
-/* responsive (features only) */
-@media (max-width: 980px){
-  .case-everytime .feature-row,
-  .case-everytime .feature-row--reverse{
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding: 40px 0;
-    max-width: 520px;
-  }
-
-  .case-everytime .feature-row--reverse .feature-row__img,
-  .case-everytime .feature-row--reverse .feature-row__text{
-    grid-column: auto;
-    justify-self: start;
-  }
-
-  .case-everytime .feature-row__text{
-    max-width: 52ch;
-  }
+  justify-self: start;   /* ✅ keeps it feeling “in the column”, not shoved weirdly */
 }
 
 /* MEDIA (generic) */
@@ -765,18 +725,32 @@ body {
   .about-hero__image { width: 320px; height: 220px; }
   .about-info__grid { grid-template-columns: 1fr; row-gap: 38px; column-gap: 0; }
 
-  /* Everytime hero + overview */
+  /* Everytime hero */
   .case-everytime .case-hero__grid { grid-template-columns: 1fr; gap: 26px; }
   .case-everytime .case-hero__right { justify-content: flex-start; padding-top: 18px; }
   .case-everytime .case-hero__phone { width: 320px; height: auto; max-height: none; }
   .case-everytime .hero-strip__img { width: 100%; }
 
+  /* Overview */
   .case-everytime .overview-grid {
     grid-template-columns: 1fr;
     gap: 22px;
   }
   .case-everytime .overview-right { justify-content: flex-start; }
   .case-everytime .role-bubble { margin-top: 10px; }
+
+  /* Features stack */
+  .case-everytime .feature-row,
+  .case-everytime .feature-row--reverse{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 40px 0;
+    max-width: 520px;
+  }
+  .case-everytime .feature-row--reverse .feature-row__img,
+  .case-everytime .feature-row--reverse .feature-row__text{
+    grid-column: auto;
+  }
 
   .case-everytime .key-findings__grid { grid-template-columns: 1fr; }
 }
