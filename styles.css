@@ -421,7 +421,7 @@ body {
 }
 
 .case-everytime .case-section__title {
-  font-size: 24px;      /* makes it feel like Figma's bold subhead */
+  font-size: 30px;      /* makes it feel like Figma's bold subhead */
   font-weight: 650;
   letter-spacing: 0;
   margin-bottom: 12px;
