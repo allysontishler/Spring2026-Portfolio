@@ -542,7 +542,7 @@ body {
   letter-spacing: -0.2px;
 
   /* ✅ push text higher since circle is cropped */
-  transform: translateY(-48px);
+  transform: translateY(-44px);
 }
 
 
