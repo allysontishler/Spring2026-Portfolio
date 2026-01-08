@@ -465,7 +465,7 @@ body {
   align-items: start;
 }
 
-.case-everytime .project-brief .case-body { max-width: 120ch; }
+.case-everytime .project-brief .case-body { max-width: 120ch; padding-bottom: 24px; }
 
 .case-everytime .my-role {
   margin-top: 34px;
@@ -475,6 +475,7 @@ body {
 .case-everytime .my-role .case-body {
   max-width: none;
   line-height: 1.7;
+
 }
 
 /* Divider under "Individual Project" */
