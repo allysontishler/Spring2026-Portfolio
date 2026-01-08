@@ -401,6 +401,15 @@ body {
   color: var(--case-muted);
 }
 
+/* OVERVIEW kicker: red + slightly heavier */
+.case-everytime .case-section--overview .case-kicker {
+  color: var(--case-red);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.18px;
+}
+
+
 .case-everytime .case-title {
   margin: 16px 0 18px;
   font-size: 24px;
@@ -409,6 +418,14 @@ body {
   color: #111;
   max-width: none;
 }
+
+.case-everytime .case-section__title {
+  font-size: 18px;      /* makes it feel like Figma's bold subhead */
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+}
+
 
 .case-everytime .case-deck {
   margin: 0;
@@ -428,11 +445,17 @@ body {
 
 .case-everytime .case-body {
   margin: 0;
-  font-size: 12px;
-  line-height: 1.65;
+  font-size: 13px;
+  line-height: 1.75;
   color: #2b2b2b;
   max-width: 78ch;
 }
+
+/* Add comfortable spacing between paragraphs in overview text */
+.case-everytime .overview-left .case-body + .case-body {
+  margin-top: 16px;
+}
+
 
 .case-everytime .case-body--muted { color: var(--case-muted); }
 
@@ -505,8 +528,8 @@ body {
 
 /* Red bubble */
 .case-everytime .role-bubble {
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 999px;
   background: var(--case-red);
   color: #fff;
@@ -517,17 +540,27 @@ body {
   text-align: center;
 
   padding: 22px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.25;
   font-weight: 800;
 
-  margin-top: 84px; /* tweak 60–110 */
+  margin-top: 120px; /* tweak 60–110 */
+  margin-bottom: -120px;
 }
 
-/* Target users (white section) */
-.case-everytime .case-section--target {
-  padding-top: 44px;
+/* Ensure sections can layer */
+.case-everytime .case-block--gray {
+  position: relative;
+  z-index: 1;
 }
+
+.case-everytime .case-section--target {
+  position: relative;
+  z-index: 2;           /* ✅ sits above bubble */
+  background: #fff;     /* ensures clean cut-off */
+  padding-top: 56px;    /* gives space so it doesn't collide */
+}
+
 
 /* FEATURES & ITERATIONS */
 .case-everytime .feature-row {
