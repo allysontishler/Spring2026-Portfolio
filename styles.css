@@ -548,6 +548,19 @@ body {
 
 .case-everytime .outcome-body { max-width: 120ch; }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================
    FEATURES & ITERATIONS  ✅ FIXED
 ========================= */
@@ -573,9 +586,7 @@ body {
   padding: 62px 0;
 }
 
-.case-everytime .feature-row + .feature-row{
-  border-top: 1px solid rgba(0,0,0,0.08);
-}
+
 
 .case-everytime .feature-row__img{
   width: 100%;
