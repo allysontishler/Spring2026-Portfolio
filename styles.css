@@ -765,6 +765,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: var(--case-muted);
+  max-width: 62ch;
 }
 
 .case-everytime .keyfinding__text{
