@@ -634,7 +634,7 @@ body {
 
 .case-everytime .feature-row--reverse .feature-row__text{
   grid-column: 1;
-  justify-self: start;   /* ✅ keeps it feeling “in the column”, not shoved weirdly */
+  justify-self: center;   /* ✅ keeps it feeling “in the column”, not shoved weirdly */
 }
 
 /* MEDIA (generic) */
