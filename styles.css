@@ -597,7 +597,7 @@ body {
 }
 
 .case-everytime .outcome-body {
-  max-width: 95ch;     /* same “wide paragraph” feel as Project Brief */
+  max-width: 120ch;     /* same “wide paragraph” feel as Project Brief */
 }
 
 
