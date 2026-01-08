@@ -630,7 +630,7 @@ body {
 
 .case-everytime .feature-row__title {
   margin: 0;
-  font-size: 12px;
+  font-size: 28px;
   font-weight: 800;
   color: var(--case-red);
 }
