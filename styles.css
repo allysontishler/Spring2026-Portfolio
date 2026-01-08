@@ -746,14 +746,13 @@ body {
 }
 
 .case-everytime .keyfindings__grid {
-  max-width: 1000px;   /* 🔥 THIS is the magic number */
+  max-width: 1000px;
   margin: 36px auto 0;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;          /* controls distance between left & right */
-  align-items: start;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
 }
+
 
 /* Left column */
 .case-everytime .keyfinding + .keyfinding{
