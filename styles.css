@@ -379,7 +379,7 @@ body {
 }
 
 /* Global sections */
-.case-everytime .case-section { padding: 72px 0; }
+.case-everytime .case-section { padding: 72px 0 32px; }
 
 .case-everytime .case-block { padding: 0; }
 
