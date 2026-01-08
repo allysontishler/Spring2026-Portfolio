@@ -630,6 +630,89 @@ body {
 
 
 
+/* =========================
+   RESEARCH & VALIDATION
+========================= */
+.case-everytime .case-section--research .research-kicker{
+  color: var(--case-red);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.case-everytime .research-title{
+  margin: 0 0 14px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111;
+}
+
+.case-everytime .research-intro{
+  max-width: 120ch;
+}
+
+.case-everytime .research-grid{
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.case-everytime .research-subhead{
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--case-muted);
+}
+
+.case-everytime .research-list{
+  margin: 0;
+  padding-left: 16px;
+  color: #2b2b2b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.case-everytime .research-visual{
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+  justify-self: end;
+}
+
+/* Optional icon row (only if you use OPTION B) */
+.case-everytime .research-icons{
+  margin-top: 14px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.case-everytime .research-icons img{
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 980px){
+  .case-everytime .research-grid{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .case-everytime .research-visual{
+    max-width: 520px;
+    justify-self: start;
+  }
+
+  .case-everytime .research-icons{
+    justify-content: flex-start;
+  }
+}
+
 
 /* MEDIA (generic) */
 .case-everytime .case-media { margin-top: 18px; }
