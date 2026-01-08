@@ -633,6 +633,12 @@ body {
 /* =========================
    RESEARCH & VALIDATION
 ========================= */
+/* Make Research & Validation section taller */
+.case-everytime .case-section--research {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .case-everytime .case-section--research .research-kicker{
   color: var(--case-red);
   font-weight: 800;
