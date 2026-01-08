@@ -825,7 +825,7 @@ body {
   border-radius: 50%;
 
   background: #7f7f7f;                 /* hollow center */
-  border: 10px solid #e6e6e6;        /* thick gray ring */
+  border: 20px solid #e6e6e6;        /* thick gray ring */
 
   display: flex;
   align-items: center;
