@@ -824,7 +824,7 @@ body {
   height: 96px;
   border-radius: 50%;
 
-  background: #fff;                 /* hollow center */
+  background: #7f7f7f;                 /* hollow center */
   border: 10px solid #e6e6e6;        /* thick gray ring */
 
   display: flex;
