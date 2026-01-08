@@ -30,15 +30,9 @@
   );
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+html, body { margin: 0; padding: 0; }
 
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -59,7 +53,6 @@ body {
 
   padding: var(--nav-top) var(--page-pad-x) 14px;
 }
-
 
 .nav {
   display: flex;
@@ -94,61 +87,51 @@ body {
 }
 
 /* =========================
-   HERO (centered block, text left, illustration right)
+   HOME HERO (homepage)
 ========================= */
 .hero {
   padding: 120px var(--page-pad-x) 0;
 }
 
 .hero__inner {
-  max-width: 920px;     /* SAME as .work__inner */
+  max-width: 920px;
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 440px 1fr; /* text column width matches a card */
+  grid-template-columns: 440px 1fr;
   align-items: center;
   gap: 70px;
 }
 
-
-.hero__text {
-  max-width: 440px;
-}
+.hero__text { max-width: 440px; }
 
 .hero__headline {
   margin: 0;
-  font-size: 22px;       /* up from ~18px */
-  line-height: 1.35;     /* keeps vertical rhythm */
+  font-size: 22px;
+  line-height: 1.35;
   font-weight: 700;
   letter-spacing: 0.1px;
 }
-
 
 .highlight {
   background: var(--gradient-accent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
   font-weight: 800;
 }
 
-
-
-/* Illustration sizing similar to Figma */
 .hero__art {
   display: flex;
-  justify-content: flex-end; /* pushes image to the right edge */
+  justify-content: flex-end;
   align-items: center;
 }
-
 
 .hero__img {
   width: 550px;
   height: auto;
   display: block;
 }
-
 
 /* =========================
    SELECTED WORK
@@ -168,76 +151,31 @@ body {
   font-weight: 700;
 }
 
-/* Grid: two cards on first row, one on second row (left-aligned) */
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
 
-
-.work-card__media--tall {
-  height: 260px; /* slightly taller feel like your bottom card */
-}
-
-/* =========================
-   SELECTED WORK (Image-only cards)
-========================= */
-
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-
-/* The link wrapper is just a vertical stack: image then tags */
+/* Image-only cards */
 .work-card {
   display: flex;
   flex-direction: column;
-  gap: 14px; /* spacing between image and tag pills */
+  gap: 14px;
   text-decoration: none;
   color: inherit;
 }
 
-/* Image IS the card */
 .work-card__img {
   width: 100%;
   height: auto;
   display: block;
-
-  /* Figma-style rounding */
   border-radius: 20px;
-
-  /* Optional: if you ever add hover effects later, this keeps it clean */
   overflow: hidden;
 }
 
-/* Bottom card sits alone on the left */
-.work-card--single {
-  grid-column: 1 / 2;
-}
+.work-card--single { grid-column: 1 / 2; }
 
-/* Tags */
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  height: 22px;
-  padding: 0 10px;
-  border-radius: 999px;
-  background: #e9e9e9;
-  font-size: 11px;
-  color: #6b6b6b;
-  font-weight: 600;
-}
-
-
-/* tags row */
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -255,11 +193,6 @@ body {
   font-size: 11px;
   color: #6b6b6b;
   font-weight: 600;
-}
-
-/* Third card on its own row, left column only */
-.work-card--single {
-  grid-column: 1 / 2;
 }
 
 /* =========================
@@ -291,12 +224,7 @@ body {
   color: transparent;
 }
 
-
-
-.footer__meta {
-  display: grid;
-  gap: 6px;
-}
+.footer__meta { display: grid; gap: 6px; }
 
 .footer__line {
   margin: 0;
@@ -317,57 +245,17 @@ body {
 }
 
 /* =========================
-   RESPONSIVE (keeps same look, just stacks)
-========================= */
-@media (max-width: 980px) {
-  :root {
-    --page-pad-x: 28px;
-  }
-
-  .hero__inner {
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
-
-  .hero__art {
-    justify-content: flex-start;
-  }
-
-  .work-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .work-card--single {
-    grid-column: auto;
-  }
-
-  .footer__inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer__right {
-    gap: 22px;
-    margin-top: 18px;
-  }
-}
-
-/* ABOUT PAGE CSS */
-
-/* =========================
    ABOUT PAGE (matches About-Page Figma)
 ========================= */
-
 .about-page {
   padding: 110px var(--page-pad-x) 120px;
 }
 
 .about-page__inner {
-  max-width: var(--content-max); /* 920px */
+  max-width: var(--content-max);
   margin: 0 auto;
 }
 
-/* Top section: text left, portrait right */
 .about-hero {
   display: grid;
   grid-template-columns: 1fr 420px;
@@ -375,14 +263,12 @@ body {
   align-items: start;
 }
 
-/* Title */
 .about-hero__title {
   margin: 0 0 12px;
   font-size: 22px;
   line-height: 1.25;
   font-weight: 800;
   letter-spacing: 0.1px;
-
 }
 
 .about-hero__accent {
@@ -390,7 +276,6 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
   font-weight: 800;
 }
 
@@ -399,14 +284,10 @@ body {
   font-size: 13px;
   line-height: 1.55;
   color: #2f2f2f;
-  max-width: 46ch; /* keeps the exact narrow paragraph measure in Figma */
+  max-width: 46ch;
 }
 
-/* Portrait */
-.about-hero__image-wrap {
-  display: flex;
-  justify-content: flex-end;
-}
+.about-hero__image-wrap { display: flex; justify-content: flex-end; }
 
 .about-hero__image {
   width: 380px;
@@ -414,13 +295,10 @@ body {
   object-fit: cover;
   border-radius: 26px;
   display: block;
-  background: #d9d9d9; /* so placeholder looks intentional */
+  background: #d9d9d9;
 }
 
-/* Lower grid: 2 columns x 2 rows */
-.about-info {
-  margin-top: 72px;
-}
+.about-info { margin-top: 72px; }
 
 .about-info__grid {
   display: grid;
@@ -429,7 +307,6 @@ body {
   row-gap: 58px;
 }
 
-/* Each block */
 .about-card__title {
   margin: 0 0 12px;
   font-size: 14px;
@@ -439,13 +316,8 @@ body {
   gap: 8px;
 }
 
-.about-card__icon {
-  display: inline-flex;
-  width: 18px;
-  justify-content: center;
-}
+.about-card__icon { display: inline-flex; width: 18px; justify-content: center; }
 
-/* Lists */
 .about-list {
   list-style: none;
   margin: 0;
@@ -458,14 +330,12 @@ body {
   color: #2f2f2f;
 }
 
-/* Small trailing “…and more!” line */
 .about-card__small {
   margin: 18px 0 0;
   font-size: 13px;
   color: #2f2f2f;
 }
 
-/* Project lines */
 .about-lines p {
   margin: 0 0 18px;
   font-size: 13px;
@@ -474,42 +344,7 @@ body {
 }
 
 /* =========================
-   ABOUT PAGE: Responsive
-========================= */
-@media (max-width: 980px) {
-  .about-page {
-    padding: 90px var(--page-pad-x) 90px;
-  }
-
-  .about-hero {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .about-hero__image-wrap {
-    justify-content: flex-start;
-  }
-
-  .about-hero__image {
-    width: 320px;
-    height: 220px;
-  }
-
-  .about-info__grid {
-    grid-template-columns: 1fr;
-    row-gap: 38px;
-    column-gap: 0;
-  }
-}
-
-
-
-
-
-
-/* =========================
    EVERYTIME CASE STUDY (SCOPED)
-   Replace your entire existing Everytime block with this
 ========================= */
 .case-everytime {
   --case-red: #f91f15;
@@ -518,39 +353,29 @@ body {
   --case-gray: #f5f5f5;
 }
 
-.case-everytime main {
-  padding-bottom: 40px;
-}
+.case-everytime main { padding-bottom: 40px; }
 
-/* Wider than homepage to match your 1512px Figma frame */
 .case-everytime .case-inner {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 var(--page-pad-x);
 }
 
-/* -------------------------
-   Global section spacing / blocks
-------------------------- */
-.case-everytime .case-section {
-  padding: 72px 0;
+/* Global sections */
+.case-everytime .case-section { padding: 72px 0; }
+
+.case-everytime .case-block { padding: 0; }
+
+.case-everytime .case-block--gray { background: var(--case-gray); }
+
+.case-everytime .case-block--pink { background: var(--case-pink); }
+
+/* FIX: snap gray overview closer to hero */
+.case-everytime .case-hero + .case-section {
+  padding-top: 34px;
 }
 
-.case-everytime .case-block {
-  padding: 0;
-}
-
-.case-everytime .case-block--gray {
-  background: var(--case-gray);
-}
-
-.case-everytime .case-block--pink {
-  background: var(--case-pink);
-}
-
-/* -------------------------
-   Typography
-------------------------- */
+/* Typography */
 .case-everytime .case-kicker {
   margin: 0;
   font-size: 16px;
@@ -561,13 +386,12 @@ body {
 
 .case-everytime .case-title {
   margin: 16px 0 18px;
-  font-size: 24px;     /* ↓ smaller so it fits on one line */
-  line-height: 1.15;   /* slightly looser for readability */
+  font-size: 24px;
+  line-height: 1.15;
   font-weight: 800;
   color: #111;
-  max-width: none;     /* IMPORTANT: allow full column width */
+  max-width: none;
 }
-
 
 .case-everytime .case-deck {
   margin: 0;
@@ -593,32 +417,20 @@ body {
   max-width: 78ch;
 }
 
-.case-everytime .case-body--muted {
-  color: var(--case-muted);
-}
+.case-everytime .case-body--muted { color: var(--case-muted); }
 
-/* -------------------------
-   HERO — matches your Figma screenshot
-   (Text + phone on top row; logo+phones under left)
-------------------------- */
-.case-everytime .case-hero {
-  padding: 72px 0 0;
-}
+/* HERO */
+.case-everytime .case-hero { padding: 72px 0 0; }
 
 .case-everytime .case-hero__grid {
   display: grid;
-  grid-template-columns: 1fr auto; /* 🔑 key change */
+  grid-template-columns: 1fr auto;
   align-items: start;
-  column-gap: 48px;               /* smaller gap like Figma */
-}
-
-
-.case-everytime .case-hero__left {
-  /* nothing special needed; width controlled by grid */
+  column-gap: 48px;
 }
 
 .case-everytime .hero-visual {
-  margin-top: 60px; /* places logo + phone row lower like Figma */
+  margin-top: 60px;
   height: 600px;
 }
 
@@ -631,23 +443,22 @@ body {
 }
 
 .case-everytime .hero-strip__mask {
-  height: 300px;        /* controls how much is cut off at the bottom */
-  overflow: hidden;    /* crops bottom ONLY because width is full */
-  width: 100%;         /* IMPORTANT: prevents right-side clipping */
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .case-everytime .hero-strip__img {
-  width: 680px;    /* keeps row from stretching too wide */
+  width: 680px;
   height: auto;
   max-width: 100%;
   display: block;
 }
 
-/* Right phone placement */
 .case-everytime .case-hero__right {
   display: flex;
   justify-content: flex-end;
-  padding-top: 112px; /* pushes phone down like Figma */
+  padding-top: 112px;
 }
 
 .case-everytime .case-hero__phone {
@@ -656,18 +467,26 @@ body {
   width: auto;
 }
 
-
-
-/* -------------------------
-   RED CIRCLE — used in "My role" section (NOT hero)
-------------------------- */
-.case-everytime .role-grid {
+/* OVERVIEW GRID (gray block) */
+.case-everytime .overview-grid {
   display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 48px;
+  grid-template-columns: 1fr 280px;
+  gap: 56px;
   align-items: start;
 }
 
+.case-everytime .overview-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.case-everytime .overview-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 26px 0;
+}
+
+/* Red bubble */
 .case-everytime .role-bubble {
   width: 220px;
   height: 220px;
@@ -685,13 +504,15 @@ body {
   line-height: 1.25;
   font-weight: 800;
 
-  /* nudges it down to match Figma placement */
-  margin-top: 36px;
+  margin-top: 84px; /* tweak 60–110 */
 }
 
-/* -------------------------
-   FEATURES & ITERATIONS
-------------------------- */
+/* Target users (white section) */
+.case-everytime .case-section--target {
+  padding-top: 44px;
+}
+
+/* FEATURES & ITERATIONS */
 .case-everytime .feature-row {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -713,7 +534,7 @@ body {
 .case-everytime .feature-row__text {
   display: flex;
   flex-direction: column;
-  min-height: 360px; /* makes paragraph feel centered vs the phone */
+  min-height: 360px;
 }
 
 .case-everytime .feature-row__title {
@@ -734,12 +555,8 @@ body {
   max-width: 56ch;
 }
 
-/* -------------------------
-   MEDIA (generic)
-------------------------- */
-.case-everytime .case-media {
-  margin-top: 18px;
-}
+/* MEDIA (generic) */
+.case-everytime .case-media { margin-top: 18px; }
 
 .case-everytime .case-media--center {
   display: flex;
@@ -752,16 +569,10 @@ body {
   display: block;
 }
 
-.case-everytime .case-media__img--narrow {
-  max-width: 520px;
-}
+.case-everytime .case-media__img--narrow { max-width: 520px; }
 
-/* -------------------------
-   Key findings
-------------------------- */
-.case-everytime .key-findings {
-  margin-top: 26px;
-}
+/* Key findings */
+.case-everytime .key-findings { margin-top: 26px; }
 
 .case-everytime .key-findings__grid {
   margin-top: 10px;
@@ -787,9 +598,7 @@ body {
   color: #111;
 }
 
-/* -------------------------
-   Personas / Journey / Tables
-------------------------- */
+/* Personas / Journey / Tables */
 .case-everytime .persona-stack {
   margin-top: 18px;
   display: grid;
@@ -823,50 +632,43 @@ body {
 }
 
 /* =========================
-   EVERYTIME RESPONSIVE
+   RESPONSIVE (site-wide)
 ========================= */
 @media (max-width: 980px) {
-  .case-everytime .case-hero__grid {
+  :root { --page-pad-x: 28px; }
+
+  /* Home */
+  .hero__inner { grid-template-columns: 1fr; gap: 26px; }
+  .hero__art { justify-content: flex-start; }
+  .work-grid { grid-template-columns: 1fr; }
+  .work-card--single { grid-column: auto; }
+
+  /* Footer */
+  .footer__inner { flex-direction: column; align-items: flex-start; }
+  .footer__right { gap: 22px; margin-top: 18px; }
+
+  /* About */
+  .about-page { padding: 90px var(--page-pad-x) 90px; }
+  .about-hero { grid-template-columns: 1fr; gap: 28px; }
+  .about-hero__image-wrap { justify-content: flex-start; }
+  .about-hero__image { width: 320px; height: 220px; }
+  .about-info__grid { grid-template-columns: 1fr; row-gap: 38px; column-gap: 0; }
+
+  /* Everytime */
+  .case-everytime .case-hero__grid { grid-template-columns: 1fr; gap: 26px; }
+  .case-everytime .case-hero__right { justify-content: flex-start; padding-top: 18px; }
+  .case-everytime .case-hero__phone { width: 320px; height: auto; max-height: none; }
+  .case-everytime .hero-strip__img { width: 100%; }
+
+  .case-everytime .overview-grid {
     grid-template-columns: 1fr;
-    gap: 26px;
+    gap: 22px;
   }
+  .case-everytime .overview-right { justify-content: flex-start; }
+  .case-everytime .role-bubble { margin-top: 10px; }
 
-  .case-everytime .case-hero__right {
-    justify-content: flex-start;
-    padding-top: 18px;
-  }
-
-  .case-everytime .case-hero__phone {
-    width: 320px;
-  }
-
-  .case-everytime .hero-strip__img {
-    width: 100%;
-  }
-
-  .case-everytime .role-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .case-everytime .role-bubble {
-    margin-top: 18px;
-  }
-
-  .case-everytime .feature-row {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .case-everytime .feature-row__text {
-    min-height: auto;
-  }
-
-  .case-everytime .feature-row__desc {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
-  .case-everytime .key-findings__grid {
-    grid-template-columns: 1fr;
-  }
+  .case-everytime .feature-row { grid-template-columns: 1fr; gap: 16px; }
+  .case-everytime .feature-row__text { min-height: auto; }
+  .case-everytime .feature-row__desc { margin-top: 10px; margin-bottom: 0; }
+  .case-everytime .key-findings__grid { grid-template-columns: 1fr; }
 }
