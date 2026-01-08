@@ -519,7 +519,7 @@ body {
 }
 
 .case-everytime main {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 /* Wider than homepage to match your 1512px Figma frame */
