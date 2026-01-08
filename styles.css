@@ -746,7 +746,7 @@ body {
 }
 
 .case-everytime .keyfindings__grid {
-  max-width: 1020px;   /* 🔥 THIS is the magic number */
+  max-width: 1010px;   /* 🔥 THIS is the magic number */
   margin: 36px auto 0;
 
   display: grid;
