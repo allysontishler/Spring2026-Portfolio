@@ -604,7 +604,7 @@ body {
    (Text + phone on top row; logo+phones under left)
 ------------------------- */
 .case-everytime .case-hero {
-  padding: 0;
+  padding: 72px 0;
 }
 
 .case-everytime .case-hero__grid {
