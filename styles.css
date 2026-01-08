@@ -580,7 +580,7 @@ body {
   position: relative;
   z-index: 2;           /* ✅ sits above bubble */
   background: #fff;     /* ensures clean cut-off */
-  padding-top: 56px;    /* gives space so it doesn't collide */
+  padding-top: 0;    /* gives space so it doesn't collide */
 }
 
 /* OUTCOME (pink block between Target Users and Features) */
