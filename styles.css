@@ -537,10 +537,8 @@ body {
 }
 
 .case-everytime .case-block {
-  padding: 72px 0;
+  padding: 0;
 }
-
-
 
 .case-everytime .case-block--gray {
   background: var(--case-gray);
@@ -621,8 +619,7 @@ body {
 
 .case-everytime .hero-visual {
   margin-top: 60px; /* places logo + phone row lower like Figma */
-  height: auto;
-  margin-bottom: 0;
+  height: 600px;
 }
 
 .case-everytime .hero-logo {
@@ -637,14 +634,12 @@ body {
   height: 300px;        /* controls how much is cut off at the bottom */
   overflow: hidden;    /* crops bottom ONLY because width is full */
   width: 100%;         /* IMPORTANT: prevents right-side clipping */
-  margin-bottom: 0;
 }
 
 .case-everytime .hero-strip__img {
   width: 680px;    /* keeps row from stretching too wide */
   height: auto;
   max-width: 100%;
-  display: block;
   display: block;
 }
 
@@ -660,12 +655,6 @@ body {
   max-height: 475px;
   width: auto;
 }
-
-.case-everytime .case-hero--flush {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
 
 
 
