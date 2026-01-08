@@ -612,18 +612,13 @@ body {
   max-width: 350px;
 }
 
-/* alternate layout */
+.case-everytime .feature-row__img{ grid-area: img; }
+.case-everytime .feature-row__text{ grid-area: text; max-width: 380px; }
+
+/* Reverse row = just swap the areas */
 .case-everytime .feature-row--reverse{
   grid-template-columns: 1fr 360px;
-}
-
-.case-everytime .feature-row--reverse .feature-row__img{
-  grid-column: 2;
-}
-
-.case-everytime .feature-row--reverse .feature-row__text{
-  grid-column: 1;
-  justify-self: start;   /* ✅ keeps it feeling “in the column”, not shoved weirdly */
+  grid-template-areas: "text img";
 }
 
 /* MEDIA (generic) */
