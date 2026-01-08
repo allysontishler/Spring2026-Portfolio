@@ -546,6 +546,43 @@ body {
   margin-bottom: -120px;
 }
 
+/* Keep Project Brief wide */
+.case-everytime .overview-left {
+  padding-right: 0; /* ✅ remove the global padding that affected My Role */
+}
+
+/* Only Project Brief paragraphs get the wide measure */
+.case-everytime .overview-left .project-brief .case-body {
+  max-width: 95ch;
+}
+
+/* My Role becomes a grid */
+.case-everytime .role-row {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* My Role text column should be normal width */
+.case-everytime .role-left .case-body {
+  max-width: 52ch; /* ✅ keeps it left of bubble like Figma */
+}
+
+/* Bubble sits in its own column now (not absolute) */
+.case-everytime .role-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Bubble overlap/cutoff */
+.case-everytime .role-bubble {
+  margin-top: 120px;
+  margin-bottom: -150px; /* keeps the cut-off into Target Users */
+}
+
+
 /* Ensure sections can layer */
 .case-everytime .case-block--gray {
   position: relative;
@@ -720,3 +757,14 @@ body {
   .case-everytime .feature-row__desc { margin-top: 10px; margin-bottom: 0; }
   .case-everytime .key-findings__grid { grid-template-columns: 1fr; }
 }
+
+.case-everytime .role-row {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.case-everytime .role-bubble {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
