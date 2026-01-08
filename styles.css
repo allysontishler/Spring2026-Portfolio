@@ -621,7 +621,7 @@ body {
   display: grid;
   grid-template-columns: 360px 1fr;  /* phone column + text column */
   gap: 90px;
-  align-items: center;
+  align-items: stretch;
 
   padding: 62px 0;
 }
@@ -643,9 +643,10 @@ body {
 .case-everytime .feature-row__text {
   display: grid;
   grid-template-rows: auto 1fr;
-  height: 100%;
+  align-self: stretch;    /* ✅ IMPORTANT */
   max-width: 380px;
 }
+
 
 
 .case-everytime .feature-row__title{
