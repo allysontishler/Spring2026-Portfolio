@@ -677,3 +677,112 @@
     display: block;
   }
   
+
+
+
+/* =========================
+   TESTING SECTION (Playtesting + User Testing)
+========================= */
+
+.case-purrcel .case-section--testing{
+    background: #fff;
+    padding: 72px 0 120px;
+  }
+  
+  /* each block = two columns */
+  .case-purrcel .test-block{
+    display: grid;
+    grid-template-columns: 1fr 420px; /* right column fixed like figma */
+    gap: 84px;
+    align-items: start;
+  }
+  
+  /* extra space between the two blocks */
+  .case-purrcel .test-block--second{
+    margin-top: 96px;
+  }
+  
+  /* left column max width so it doesn’t feel too wide */
+  .case-purrcel .test-left{
+    max-width: 88ch;
+  }
+  
+  /* "Key Findings" label */
+  .case-purrcel .test-subhead{
+    margin: 28px 0 12px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #111;
+  }
+  
+  /* bullet list styling (compact) */
+  .case-purrcel .test-list{
+    margin: 0 0 18px;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #2b2b2b;
+  }
+  
+  .case-purrcel .test-list li{
+    margin: 3px 0;
+  }
+  
+  /* small note paragraph before final line */
+  .case-purrcel .test-note{
+    margin-top: 8px;
+  }
+  
+  /* Right side alignment */
+  .case-purrcel .test-right{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Quote card */
+  .case-purrcel .quote-card{
+    width: 360px;
+    border: 1.5px solid var(--purrcel-green);
+    background: #F3FFF5;            /* mint fill */
+    border-radius: 12px;
+    padding: 22px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .case-purrcel .quote-text{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 700;
+    color: var(--purrcel-green);
+    font-style: italic;
+  }
+  
+  /* Sketch image bottom-right */
+  .case-purrcel .test-sketch{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive */
+  @media (max-width: 980px){
+    .case-purrcel .test-block{
+      grid-template-columns: 1fr;
+      gap: 26px;
+    }
+  
+    .case-purrcel .test-right{
+      justify-content: flex-start;
+    }
+  
+    .case-purrcel .quote-card{
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  
