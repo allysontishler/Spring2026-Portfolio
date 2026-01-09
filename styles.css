@@ -380,7 +380,7 @@ main {
 
   object-fit: cover;
   object-position: 58.5% 0%;
-  transform: scale(1.18); /* change per video if needed */
+  transform: scale(1.38); /* change per video if needed */
 }
 
 .case-everytime .phone-media__video_social{
