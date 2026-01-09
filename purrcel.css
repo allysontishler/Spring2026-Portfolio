@@ -639,4 +639,41 @@
       margin: 0;
     }
   }
+
+  
+/* =========================
+   ACCESSIBILITY & INCLUSIVE DESIGN
+========================= */
+
+.case-purrcel .case-section--accessibility{
+    background: #fff;
+    padding: 72px 0 110px;
+  }
+  
+  /* Match figma text width */
+  .case-purrcel .case-section--accessibility .case-copy{
+    max-width: 110ch;
+  }
+  
+  /* Make bullets sit like the screenshot */
+  .case-purrcel .accessibility-list{
+    margin: 8px 0 18px;
+    padding-left: 18px;
+  }
+  
+  .case-purrcel .accessibility-list li{
+    margin: 4px 0;
+  }
+  
+  /* Image sizing */
+  .case-purrcel .accessibility-media{
+    margin: 34px auto 0;
+    max-width: 1040px; /* wide like figma */
+  }
+  
+  .case-purrcel .accessibility-img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   
