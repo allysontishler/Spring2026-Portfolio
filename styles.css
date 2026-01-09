@@ -392,7 +392,7 @@ main {
   aspect-ratio: 9 / 19.5;
   width: calc(min(70vh, 475px) * (9 / 19.5)); /* ✅ derived width */
 
-  border-radius: 75px;
+  border-radius: 38px;
   overflow: hidden;
   background: #000;
 
