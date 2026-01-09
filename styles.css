@@ -384,7 +384,7 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
-  object-position: 30% 50%;
+  object-position: 70% 50%;
 
   /* ✅ if you still need a *tiny* zoom, do it here */
   transform: scale(0.98);
