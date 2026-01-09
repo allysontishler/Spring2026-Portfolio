@@ -799,5 +799,6 @@
   /* keep text readable + not too wide */
   .case-purrcel .case-section--reflection .case-copy{
     max-width: 110ch;
+    color: var(--purrcel-green)
   }
   
