@@ -453,3 +453,98 @@
     display: block;
   }
   
+
+/* =========================
+   UI DESIGN SYSTEM (alternating rows)
+========================= */
+
+.case-purrcel .case-section--ui{
+    background: #fff;
+    padding: 72px 0 110px;
+  }
+  
+  .case-purrcel .ui-intro{
+    margin: 0 0 56px;
+    max-width: 92ch;
+  }
+  
+  /* stack of rows */
+  .case-purrcel .ui-stack{
+    display: grid;
+    gap: 64px; /* space between rows */
+  }
+  
+  /* one row */
+  .case-purrcel .ui-row{
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 110px;
+    align-items: center;
+  }
+  
+  /* reverse layout */
+  .case-purrcel .ui-row--reverse{
+    grid-template-columns: 1fr 340px;
+  }
+  
+  /* text block */
+  .case-purrcel .ui-text{
+    max-width: 42ch;
+  }
+  
+  .case-purrcel .ui-text--right{
+    justify-self: end;
+  }
+  
+  /* green row titles */
+  .case-purrcel .ui-title{
+    margin: 0 0 14px;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--purrcel-green);
+  }
+  
+  /* description: small + muted like figma */
+  .case-purrcel .ui-desc{
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.75;
+    color: #9f9f9d;
+  }
+  
+  /* media */
+  .case-purrcel .ui-media{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .case-purrcel .ui-img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* size variants to match figma proportions */
+  .case-purrcel .ui-img--sm{ max-width: 520px; }  /* Dialogue image (smaller) */
+  .case-purrcel .ui-img--md{ max-width: 620px; }  /* Settings image (medium) */
+  .case-purrcel .ui-img--lg{ max-width: 680px; }  /* Pause/Audio images (larger) */
+  
+  /* responsive */
+  @media (max-width: 980px){
+    .case-purrcel .ui-row,
+    .case-purrcel .ui-row--reverse{
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+  
+    .case-purrcel .ui-text,
+    .case-purrcel .ui-text--right{
+      justify-self: start;
+      max-width: 100%;
+    }
+  
+    .case-purrcel .ui-media{
+      justify-content: flex-start;
+    }
+  }
+  
