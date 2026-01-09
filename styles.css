@@ -366,7 +366,7 @@ main {
   max-height: 475px;
   width: auto;
 
-  aspect-ratio: 10 / 19;      /* phone-ish ratio */
+  aspect-ratio: 9 / 19.5;      /* phone-ish ratio */
   border-radius: 34px;          /* rounded corners */
   overflow: hidden;             /* ✅ crops the video */
   background: #000;
