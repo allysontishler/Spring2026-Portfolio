@@ -12,7 +12,7 @@
   
   /* MAIN */
   .case-purrcel main{
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
   
   /* Safety: hide Everytime-only components */
@@ -799,6 +799,6 @@
   /* keep text readable + not too wide */
   .case-purrcel .case-section--reflection .case-copy{
     max-width: 110ch;
-    color: var(--purrcel-green)
+    color: var(--purrcel-green);
   }
   
