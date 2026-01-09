@@ -364,7 +364,7 @@ main {
 .case-everytime .case-hero__phone-wrap{
   height: 70vh;
   max-height: 475px;
-  width: 500px;
+  width: auto;
 
   aspect-ratio: 9 / 19.5;      /* phone-ish ratio */
   border-radius: 32px;          /* rounded corners */
