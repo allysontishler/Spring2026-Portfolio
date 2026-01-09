@@ -367,7 +367,7 @@ main {
   width: auto;
 
   aspect-ratio: 9 / 19.5;      /* phone-ish ratio */
-  border-radius: 34px;          /* rounded corners */
+  border-radius: 32px;          /* rounded corners */
   overflow: hidden;             /* ✅ crops the video */
   background: #000;
 
