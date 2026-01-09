@@ -1,108 +1,131 @@
 /* =========================
    PURRCEL CASE STUDY
-   ========================= */
+========================= */
 
-   .case-purrcel {
-    --case-primary: #6b5cff;
-    --case-accent: #f2c94c;
-    --case-bg: #f7f6ff;
+.case-purrcel{
     --case-muted: #8f8f8f;
-  }
   
-  /* RESET any Everytime-specific leftovers */
-  .case-purrcel .phone-media,
-  .case-purrcel .case-everytime,
-  .case-purrcel .everytime-media {
-    display: none;
+    --purrcel-green: #398027;
+    --purrcel-mint: #F3FFF5;
+    --purrcel-overview-gray: #F5F5F5;
   }
   
   /* MAIN */
-  .case-purrcel main {
+  .case-purrcel main{
     padding-bottom: 80px;
   }
   
-  /* HERO */
-  .case-purrcel .case-hero {
-    padding: 120px 0 80px;
+  /* Safety: hide Everytime-only components */
+  .case-purrcel .phone-media,
+  .case-purrcel .case-everytime,
+  .case-purrcel .everytime-media{
+    display: none;
   }
   
-  .case-purrcel .case-hero-inner {
-    max-width: 1200px;
+  /* Container (matches Everytime) */
+  .case-purrcel .case-inner{
+    max-width: 1160px;
     margin: 0 auto;
-    padding: 0 24px;
-  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: center;
+    padding: 0 var(--page-pad-x);
   }
   
-  .case-purrcel .case-subtitle {
-    color: var(--case-muted);
-    max-width: 420px;
+  /* Section rhythm */
+  .case-purrcel .case-section{
+    padding: 72px 0 32px;
   }
   
-  /* SECTIONS */
-  .case-purrcel .case-section {
-    padding: 80px 0;
+  /* Full-width background blocks */
+  .case-purrcel .case-block{
+    padding: 0;
   }
   
-  .case-purrcel .case-section-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 24px;
+  .case-purrcel .case-block--mint{
+    background: var(--purrcel-mint);
   }
-
-
-
+  
+  /* Overview background */
+  .case-purrcel .case-section--overview{
+    background: var(--purrcel-overview-gray);
+    padding: 72px 0 50px;
+  }
+  
   /* =========================
-   PURRCEL HERO — OVERRIDES
-   ========================= */
-
-.case-purrcel .case-hero {
+     HERO
+  ========================= */
+  
+  .case-purrcel .case-hero{
     padding: 110px 0 50px;
   }
   
-  .case-purrcel .case-hero-inner {
+  .case-purrcel .case-hero-inner{
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 24px;
   
-    /* override Everytime grid layout */
+    /* prevent Everytime grid bleed */
     display: block !important;
   }
   
-  .case-purrcel .case-kicker {
-    margin: 0 0 22px;
+  /* Kicker (small headers like "Overview") */
+  .case-purrcel .case-kicker{
+    margin: 0 0 14px;
     font-size: 16px;
-    color: #9a9a9a;
+    line-height: 1.2;
+    font-weight: 350;
+    color: #9f9f9d;
+    letter-spacing: 0.18px;
   }
   
-  .case-purrcel .case-title {
-    margin: 0 0 18px;
-    font-size: 42px;
-    letter-spacing: 0.5px;
-  
-    /* override any weird alignment rules */
-    text-align: left !important;
+  /* Green kicker for Overview */
+  .case-purrcel .case-section--overview .case-kicker{
+    color: var(--purrcel-green);
+    font-weight: 800;
   }
   
-  .case-purrcel .case-subtitle {
+  /* =========================
+     ALL HEADERS (26px)
+  ========================= */
+  
+  /* This controls:
+     - PURRCEL
+     - Project Brief
+     - My Role
+     - The Outcome
+     - Purpose of PURRCEL
+     - Target Players
+  */
+  .case-purrcel .case-title{
+    margin: 16px 0 18px;
+    font-size: 26px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #111;
+    text-align: left;
+  }
+  
+  /* Spacing before Target Players */
+  .case-purrcel .case-title--subsection{
+    margin-top: 70px;
+  }
+  
+  /* =========================
+     HERO MEDIA
+  ========================= */
+  
+  .case-purrcel .case-subtitle{
     margin: 0 0 44px;
     font-size: 18px;
     line-height: 1.6;
     max-width: 720px;
     color: #1a1a1a;
-  
-    text-align: left !important;
   }
   
-  .case-purrcel .hero-media {
-    margin: 0 auto;          /* centers the image block */
+  .case-purrcel .hero-media{
+    margin: 0 auto;
     max-width: 900px;
   }
   
-  .case-purrcel .hero-img {
+  .case-purrcel .hero-img{
     width: 100%;
     height: auto;
     display: block;
@@ -110,78 +133,10 @@
     margin-bottom: 42px;
   }
   
-  /* Responsive */
-  @media (max-width: 900px) {
-    .case-purrcel .case-hero {
-      padding: 90px 0 40px;
-    }
+  /* =========================
+     BODY COPY
+  ========================= */
   
-    .case-purrcel .case-title {
-      font-size: 26px;
-    }
-  
-    .case-purrcel .hero-media {
-      max-width: 100%;
-    }
-  }
-
-  
-/* =========================
-   PURRCEL — OVERVIEW SECTIONS
-========================= */
-
-.case-purrcel{
-    --purrcel-green: #398027;
-    --purrcel-mint: #F3FFF5;
-  }
-  
-  /* match Everytime container behavior */
-  .case-purrcel .case-inner{
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 var(--page-pad-x);
-  }
-  
-  /* section rhythm (very close to Everytime) */
-  .case-purrcel .case-section{ padding: 72px 0 32px; }
-  .case-purrcel .case-hero + .case-section{ padding-top: 34px; }
-  
-  /* block backgrounds */
-  .case-purrcel .case-block{ padding: 0; }
-  .case-purrcel .case-block--mint{ background: var(--purrcel-mint); }
-  
-  /* kicker */
-  .case-purrcel .case-kicker{
-    margin: 0 0 14px;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 350;
-    color: #9f9f9d;
-  }
-  .case-purrcel .case-section--overview .case-kicker{
-    color: var(--purrcel-green);
-    font-weight: 800;
-    font-size: 16px;
-    letter-spacing: 0.18px;
-  }
-  
-  /* headings */
-  .case-purrcel .case-title{
-    margin: 16px 0 18px;
-    font-size: 26px;
-    line-height: 1.15;
-    font-weight: 800;
-    color: #111;
-  }
-  .case-purrcel .case-title--section{
-    font-size: 26px; /* matches your screenshot header weight/size */
-  }
-  .case-purrcel .case-title--subsection{
-    margin-top: 54px;
-    font-size: 22px;
-  }
-  
-  /* body copy */
   .case-purrcel .case-copy{
     display: grid;
     gap: 14px;
@@ -196,15 +151,7 @@
     max-width: 200ch;
   }
   
-  /* "My Role" subhead + small line */
-  .case-purrcel .case-subhead{
-    margin: 34px 0 10px;
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 800;
-    color: #111;
-  }
-  
+  /* Sub-kicker (e.g. Team Project – Ongoing) */
   .case-purrcel .case-subkicker{
     margin: 0 0 18px;
     font-size: 12px;
@@ -212,29 +159,32 @@
     color: #9f9f9d;
   }
   
-  /* OUTCOME mint section title */
-  .case-purrcel .case-section--outcome{
-    padding: 45px 0;
-    font-size: 26px;
-  }
-
-  /* Overview block background */
-.case-purrcel .case-section--overview{
-    background: #F5F5F5;
-    padding: 72px 0 50px; /* slightly deeper so it feels like a block */
-  }
-
+  /* Green inline emphasis */
   .case-purrcel .text-green{
     color: var(--purrcel-green);
-    font-weight: 700; /* optional but it helps it read like emphasis */
+    font-weight: 700;
   }
   
-  
-  /* add breathing room before Target Players */
-.case-purrcel .case-title--subsection{
-    margin-top: 70px; /* increase from 54px */
+  /* Lists */
+  .case-purrcel .case-list{
+    margin: 12px 0 0;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #2b2b2b;
   }
-
+  
+  .case-purrcel .case-list li{
+    margin: 6px 0;
+  }
+  
+  /* =========================
+     OUTCOME
+  ========================= */
+  
+  .case-purrcel .case-section--outcome{
+    padding: 45px 0;
+  }
   
   .case-purrcel .outcome-title{
     margin: 0 0 14px;
@@ -244,122 +194,25 @@
     color: var(--purrcel-green);
   }
   
-  /* list */
-  .case-purrcel .case-list{
-    margin: 12px 0 0;
-    padding-left: 18px;
-    color: #2b2b2b;
-    font-size: 13px;
-    line-height: 1.8;
-  }
-  .case-purrcel .case-list li{ margin: 6px 0; }
+  /* =========================
+     RESPONSIVE
+  ========================= */
   
-  /* responsive */
+  @media (max-width: 900px){
+    .case-purrcel .case-hero{
+      padding: 90px 0 40px;
+    }
+  
+    .case-purrcel .hero-media{
+      max-width: 100%;
+    }
+  }
+  
   @media (max-width: 980px){
     .case-purrcel .case-inner{
       padding: 0 var(--page-pad-x);
     }
   }
   
-  
-  /* MEDIA */
-  .case-purrcel .media-block {
-    width: 100%;
-  }
-  
-  .case-purrcel .media-placeholder {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: var(--case-bg);
-    border-radius: 24px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    color: var(--case-muted);
-    font-size: 14px;
-  }
-  
-  /* MEDIA GRID */
-  .case-purrcel .case-media .case-section-inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-  
-  /* RESPONSIVE */
-  @media (max-width: 900px) {
-    .case-purrcel .case-hero-inner {
-      grid-template-columns: 1fr;
-    }
-  
-    .case-purrcel .case-media .case-section-inner {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* =========================
-   PURRCEL — HERO
-   ========================= */
-
-.case-purrcel .case-hero {
-    padding: 110px 0 50px; /* top spacing like your figma */
-  }
-  
-  .case-purrcel .case-hero-inner {
-    max-width: 1180px; /* keeps hero content aligned like screenshot */
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  
-  .case-purrcel .case-kicker {
-    margin: 0 0 22px;
-    font-size: 16px;
-    color: #9a9a9a;
-    letter-spacing: 0.2px;
-  }
-  
-  .case-purrcel .case-title {
-    margin: 0 0 18px;
-    font-size: 42px;
-    letter-spacing: 0.5px;
-  }
-  
-  .case-purrcel .case-subtitle {
-    margin: 0 0 44px;
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 720px;
-    color: #1a1a1a;
-  }
-  
-  /* Centered hero image block */
-  .case-purrcel .hero-media {
-    margin: 0 auto;
-    max-width: 900px; /* the centered image width from your figma */
-  }
-  
-  .case-purrcel .hero-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 18px; /* subtle rounding like figma */
-  }
-  
-  /* Responsive */
-  @media (max-width: 900px) {
-    .case-purrcel .case-hero {
-      padding: 90px 0 40px;
-    }
-  
-    .case-purrcel .case-title {
-      font-size: 34px;
-    }
-  
-    .case-purrcel .hero-media {
-      max-width: 100%;
-    }
-  }
   
   
