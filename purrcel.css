@@ -52,6 +52,78 @@
     margin: 0 auto;
     padding: 0 24px;
   }
+
+
+
+  /* =========================
+   PURRCEL HERO — OVERRIDES
+   ========================= */
+
+.case-purrcel .case-hero {
+    padding: 110px 0 50px;
+  }
+  
+  .case-purrcel .case-hero-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+  
+    /* override Everytime grid layout */
+    display: block !important;
+  }
+  
+  .case-purrcel .case-kicker {
+    margin: 0 0 22px;
+    font-size: 16px;
+    color: #9a9a9a;
+  }
+  
+  .case-purrcel .case-title {
+    margin: 0 0 18px;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+  
+    /* override any weird alignment rules */
+    text-align: left !important;
+  }
+  
+  .case-purrcel .case-subtitle {
+    margin: 0 0 44px;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    color: #1a1a1a;
+  
+    text-align: left !important;
+  }
+  
+  .case-purrcel .hero-media {
+    margin: 0 auto;          /* centers the image block */
+    max-width: 900px;
+  }
+  
+  .case-purrcel .hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .case-purrcel .case-hero {
+      padding: 90px 0 40px;
+    }
+  
+    .case-purrcel .case-title {
+      font-size: 34px;
+    }
+  
+    .case-purrcel .hero-media {
+      max-width: 100%;
+    }
+  }
+  
   
   /* MEDIA */
   .case-purrcel .media-block {
