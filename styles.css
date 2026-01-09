@@ -389,7 +389,7 @@ main {
   display: block;
 
   object-fit: cover;
-  object-position: 58.5% 55%;
+  object-position: 58.5% 62%;
   transform: scale(1.18); /* change per video if needed */
 }
 
