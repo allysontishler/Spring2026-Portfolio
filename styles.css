@@ -375,6 +375,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(1.02);
 }
 
 .case-everytime .case-hero__phone-video{
