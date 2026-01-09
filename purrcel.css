@@ -68,7 +68,7 @@
   
   /* Kicker (small headers like "Overview") */
   .case-purrcel .case-kicker{
-    margin: 0 0 14px;
+    margin: 0;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 350;
