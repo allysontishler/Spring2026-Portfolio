@@ -1192,6 +1192,7 @@ body {
   display: block;
   max-width: 1000px;       /* matches the screenshot feel */
   margin: 0 auto;         /* centers the table */
+  margin-top: 20px;
 }
 
 /* Mobile: keep it readable and scrollable if needed */
