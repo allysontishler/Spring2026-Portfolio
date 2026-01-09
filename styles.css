@@ -757,7 +757,7 @@ main {
 }
 
 .case-everytime .keyfindings__grid {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 36px auto 0;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
