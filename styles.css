@@ -1030,6 +1030,7 @@ body {
 
 .case-everytime .journey-section{
   margin-top: 84px; /* space after Personas */
+  max-width: 1000px;
 }
 
 .case-everytime .journey-title{
@@ -1058,7 +1059,7 @@ body {
 }
 
 .case-everytime .journey-img{
-  width: 100%;
+  width: 1000px;
   height: auto;
   display: block;
 }
