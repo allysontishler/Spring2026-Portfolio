@@ -363,12 +363,12 @@ main {
 /* HERO phone video mask */
 .case-everytime .case-hero__phone-wrap{
   height: 70vh;
-  max-height: 475px;
+  max-height: 450px;
 
   aspect-ratio: 9 / 19.5;
   width: calc(min(70vh, 475px) * (9 / 19.5)); /* ✅ derived width */
 
-  border-radius: 32px;
+  border-radius: 36px;
   overflow: hidden;
   background: #000;
 
