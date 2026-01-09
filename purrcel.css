@@ -424,3 +424,32 @@
     }
   }
   
+
+  /* =========================
+   JOURNEY MAPPING (gray)
+========================= */
+
+.case-purrcel .case-section--journey{
+    background: var(--purrcel-overview-gray); /* #F5F5F5 */
+    padding: 72px 0 110px;
+  }
+  
+  .case-purrcel .case-section--journey .case-copy{
+    max-width: 110ch; /* matches the figma text width */
+  }
+  
+  /* 3 stacked journey images */
+  .case-purrcel .journey-stack{
+    margin-top: 42px;
+    display: grid;
+    gap: 48px;                 /* spacing between the 3 images */
+    justify-items: center;     /* centers images */
+  }
+  
+  .case-purrcel .journey-img{
+    width: 100%;
+    max-width: 980px;          /* matches the screenshot scale */
+    height: auto;
+    display: block;
+  }
+  
