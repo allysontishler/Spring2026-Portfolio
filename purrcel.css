@@ -216,4 +216,89 @@
   }
   
   
+  /* =========================
+   RESEARCH & VALIDATION (GRAY)
+========================= */
+
+.case-purrcel .case-section--research{
+    background: var(--purrcel-overview-gray); /* #F5F5F5 */
+    padding: 72px 0 90px;
+  }
+  
+  /* tighter copy width like figma */
+  .case-purrcel .case-section--research .case-copy{
+    max-width: 108ch;
+  }
+  
+  /* Methods block */
+  .case-purrcel .research-methods{
+    margin-top: 52px;
+  }
+  
+  .case-purrcel .research-label{
+    margin: 0 0 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9f9f9d; /* muted label */
+  }
+  
+  .case-purrcel .research-list{
+    margin: 0;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #2b2b2b;
+    max-width: 120ch;
+  }
+  
+  .case-purrcel .research-list li{
+    margin: 3px 0;
+  }
+  
+  /* Key Findings title spacing */
+  .case-purrcel .research-findings-title{
+    margin-top: 70px;
+  }
+  
+  /* Findings grid */
+  .case-purrcel .findings-grid{
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 110px;
+    row-gap: 54px;
+    max-width: 1100px;
+  }
+  
+  .case-purrcel .finding{
+    max-width: 52ch;
+  }
+  
+  .case-purrcel .finding-title{
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9f9f9d; /* muted gray like figma */
+    line-height: 1.3;
+  }
+  
+  .case-purrcel .finding-body{
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.75;
+    color: #2b2b2b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 980px){
+    .case-purrcel .findings-grid{
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 34px;
+    }
+  
+    .case-purrcel .finding{
+      max-width: 100%;
+    }
+  }
   
