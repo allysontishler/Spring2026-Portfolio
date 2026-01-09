@@ -1190,7 +1190,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  max-width: 920px;       /* matches the screenshot feel */
+  max-width: 1000px;       /* matches the screenshot feel */
   margin: 0 auto;         /* centers the table */
 }
 
