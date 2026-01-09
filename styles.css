@@ -28,30 +28,32 @@
 }
 
 * { box-sizing: border-box; }
+
 html, body{
   margin: 0;
   padding: 0;
-  height: auto;        /* ✅ don’t lock height */
-  min-height: 100%;    /* ✅ still allows full height */
+  height: auto;
+  min-height: 100%;
 }
 
 body{
-  min-height: 100vh;   /* ✅ ensures footer can sit at bottom */
-}
-
-
-body {
+  min-height: 100vh;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: #fff;
+
   display: flex;
   flex-direction: column;
-
 }
 
-main {
-  flex: 1;
+main{
+  flex: 1 0 auto;   /* ✅ don’t force weird stretching */
 }
+
+.footer{
+  margin-top: auto; /* ✅ keeps footer at bottom on short pages */
+}
+
 
 /* =========================
    NAV
