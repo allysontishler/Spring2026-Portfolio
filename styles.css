@@ -387,7 +387,7 @@ main {
   object-position: 60% 50%;
 
   /* ✅ if you still need a *tiny* zoom, do it here */
-  transform: scale(1.17);
+  transform: scale(1.18);
 }
 
 
