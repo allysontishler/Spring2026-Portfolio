@@ -364,7 +364,7 @@ main {
 /* Reusable phone video component */
 .case-everytime .phone-media{
   aspect-ratio: 9 / 19.5;
-  border-radius: 60px;
+  border-radius: 62px;
   overflow: hidden;
   background: transparent;
 
