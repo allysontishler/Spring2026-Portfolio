@@ -544,12 +544,12 @@ body {
   position: relative;
   z-index: 2;
   background: #fff;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 /* OUTCOME */
-.case-everytime .case-section--outcome { padding: 56px 0; }
+.case-everytime .case-section--outcome { padding: 45px 0; }
 
 .case-everytime .outcome-title {
   margin: 0 0 14px;
