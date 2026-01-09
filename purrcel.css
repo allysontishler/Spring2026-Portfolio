@@ -786,3 +786,18 @@
     }
   }
   
+
+/* =========================
+   REFLECTION & NEXT STEPS
+========================= */
+
+.case-purrcel .case-section--reflection{
+    background: var(--purrcel-mint); /* #F3FFF5 */
+    padding: 72px 0 96px;
+  }
+  
+  /* keep text readable + not too wide */
+  .case-purrcel .case-section--reflection .case-copy{
+    max-width: 110ch;
+  }
+  
