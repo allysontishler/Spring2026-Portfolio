@@ -646,7 +646,7 @@
 ========================= */
 
 .case-purrcel .case-section--accessibility{
-    background: #fff;
+    background: var(--purrcel-overview-gray);
     padding: 72px 0 110px;
   }
   
