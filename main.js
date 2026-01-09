@@ -18,3 +18,27 @@ window.addEventListener("load", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll(".phone-media__video");
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(async (entry) => {
+        const v = entry.target;
+        if (entry.isIntersecting) {
+          try { await v.play(); } catch (e) {}
+        } else {
+          v.pause();
+        }
+      });
+    },
+    { threshold: 0.35 } // play when ~35% visible
+  );
+
+  videos.forEach((v) => {
+    v.muted = true;
+    v.playsInline = true;
+    io.observe(v);
+  });
+});
+
