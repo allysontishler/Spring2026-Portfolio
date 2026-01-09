@@ -1360,6 +1360,59 @@ body {
 }
 
 
+/* =========================
+   FINAL SOLUTION
+========================= */
+
+.case-everytime .case-section--final{
+  padding: 90px 0 96px;
+}
+
+.case-everytime .case-kicker--final{
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--case-red);
+  letter-spacing: 0.18px;
+}
+
+.case-everytime .final-body{
+  max-width: 92ch;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+/* =========================
+   REFLECTION
+========================= */
+
+.case-everytime .case-section--reflection{
+  padding: 96px 0 120px;
+  background: #fff;
+}
+
+.case-everytime .reflection-title{
+  margin: 0 0 18px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #111;
+}
+
+.case-everytime .reflection-body{
+  margin: 0 0 16px;
+  max-width: 92ch;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #2b2b2b;
+}
+
+.case-everytime .reflection-body:last-child{
+  margin-bottom: 0;
+}
+
+
 
 
 
