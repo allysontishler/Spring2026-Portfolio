@@ -1067,6 +1067,58 @@ body {
 
 
 
+/* =========================
+   USABILITY TESTING
+========================= */
+
+.case-everytime .usability-section {
+  margin-top: 96px;          /* space from previous section */
+  max-width: 1000px;
+}
+
+/* Section title */
+.case-everytime .usability-section .case-section__title {
+  margin: 0 0 18px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111;
+}
+
+/* Paragraph text */
+.case-everytime .usability-section .case-body {
+  margin: 0 0 18px;          /* ✅ creates breathing room */
+  font-size: 13px;
+  line-height: 1.75;
+  color: #2b2b2b;
+  max-width: 80ch;
+}
+
+/* Task list */
+.case-everytime .usability-section ul {
+  margin: 0 0 22px 18px;     /* ✅ space before & after list */
+  padding: 0;
+}
+
+.case-everytime .usability-section li {
+  margin-bottom: 6px;        /* tighter like Figma */
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2b2b2b;
+}
+
+/* Table wrapper */
+.case-everytime .usability-section .table-wrap {
+  margin-top: 28px;          /* space above table */
+}
+
+/* Table image */
+.case-everytime .usability-section .table-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;        /* subtle polish (optional) */
+}
 
 
 
