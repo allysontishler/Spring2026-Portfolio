@@ -1365,7 +1365,7 @@ body {
 ========================= */
 
 .case-everytime .case-section--final{
-  padding: 45px 0 96px;
+  padding: 45px 0 45px;
 }
 
 .case-everytime .case-kicker--final{
@@ -1389,7 +1389,7 @@ body {
 ========================= */
 
 .case-everytime .case-section--reflection{
-  padding: 96px 0 120px;
+  padding: 45px 0 45px;
   background: #fff;
 }
 
