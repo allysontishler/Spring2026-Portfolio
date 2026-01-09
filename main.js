@@ -7,3 +7,14 @@ if (toggle && nav) {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+
+// Ensure autoplay videos start reliably
+window.addEventListener("load", () => {
+  document.querySelectorAll("video[autoplay]").forEach(video => {
+    video.play().catch(() => {
+      // Autoplay may be blocked — this is fine
+    });
+  });
+});
+
