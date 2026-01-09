@@ -1,0 +1,156 @@
+/* =========================
+   PURRCEL CASE STUDY
+   ========================= */
+
+   .case-purrcel {
+    --case-primary: #6b5cff;
+    --case-accent: #f2c94c;
+    --case-bg: #f7f6ff;
+    --case-muted: #8f8f8f;
+  }
+  
+  /* RESET any Everytime-specific leftovers */
+  .case-purrcel .phone-media,
+  .case-purrcel .case-everytime,
+  .case-purrcel .everytime-media {
+    display: none;
+  }
+  
+  /* MAIN */
+  .case-purrcel main {
+    padding-bottom: 80px;
+  }
+  
+  /* HERO */
+  .case-purrcel .case-hero {
+    padding: 120px 0 80px;
+  }
+  
+  .case-purrcel .case-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  
+  .case-purrcel .case-subtitle {
+    color: var(--case-muted);
+    max-width: 420px;
+  }
+  
+  /* SECTIONS */
+  .case-purrcel .case-section {
+    padding: 80px 0;
+  }
+  
+  .case-purrcel .case-section-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  /* MEDIA */
+  .case-purrcel .media-block {
+    width: 100%;
+  }
+  
+  .case-purrcel .media-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--case-bg);
+    border-radius: 24px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: var(--case-muted);
+    font-size: 14px;
+  }
+  
+  /* MEDIA GRID */
+  .case-purrcel .case-media .case-section-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .case-purrcel .case-hero-inner {
+      grid-template-columns: 1fr;
+    }
+  
+    .case-purrcel .case-media .case-section-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* =========================
+   PURRCEL — HERO
+   ========================= */
+
+.case-purrcel .case-hero {
+    padding: 110px 0 50px; /* top spacing like your figma */
+  }
+  
+  .case-purrcel .case-hero-inner {
+    max-width: 1180px; /* keeps hero content aligned like screenshot */
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .case-purrcel .case-kicker {
+    margin: 0 0 22px;
+    font-size: 16px;
+    color: #9a9a9a;
+    letter-spacing: 0.2px;
+  }
+  
+  .case-purrcel .case-title {
+    margin: 0 0 18px;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+  }
+  
+  .case-purrcel .case-subtitle {
+    margin: 0 0 44px;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
+    color: #1a1a1a;
+  }
+  
+  /* Centered hero image block */
+  .case-purrcel .hero-media {
+    margin: 0 auto;
+    max-width: 900px; /* the centered image width from your figma */
+  }
+  
+  .case-purrcel .hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px; /* subtle rounding like figma */
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .case-purrcel .case-hero {
+      padding: 90px 0 40px;
+    }
+  
+    .case-purrcel .case-title {
+      font-size: 34px;
+    }
+  
+    .case-purrcel .hero-media {
+      max-width: 100%;
+    }
+  }
+  
+  
