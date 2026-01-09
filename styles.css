@@ -386,7 +386,7 @@ main {
   display: block;
 
   /* ✅ if you still need a *tiny* zoom, do it here */
-  transform: scale(0.96);
+  transform: scale(0.98);
 }
 
 
