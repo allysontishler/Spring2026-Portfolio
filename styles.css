@@ -46,13 +46,17 @@ body{
   flex-direction: column;
 }
 
+html{
+  background: var(--footer); /* same as footer background */
+}
+body{
+  background: #fff;          /* keep page background white */
+}
+
 body{
   padding-top: 92px; /* adjust until content starts perfectly under nav */
 }
 
-body{ outline: 4px solid red; }
-main{ outline: 4px solid blue; }
-.footer{ outline: 4px solid green; }
 
 
 main{
