@@ -694,7 +694,7 @@
     display: grid;
     grid-template-columns: 1fr 420px; /* right column fixed like figma */
     gap: 84px;
-    align-items: start;
+    align-items: center;
   }
   
   /* extra space between the two blocks */
@@ -759,7 +759,6 @@
     font-weight: 700;
     color: var(--purrcel-green);
     font-style: italic;
-    padding-top: 100px;
   }
   
   /* Sketch image bottom-right */
