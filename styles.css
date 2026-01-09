@@ -46,6 +46,11 @@ body{
   flex-direction: column;
 }
 
+body{
+  padding-top: 92px; /* adjust until content starts perfectly under nav */
+}
+
+
 main{
   flex: 1 0 auto;   /* ✅ don’t force weird stretching */
 }
