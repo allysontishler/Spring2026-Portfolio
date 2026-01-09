@@ -548,3 +548,95 @@
     }
   }
   
+
+/* =========================
+   LOGO DESIGN & VISUAL IDENTITY
+========================= */
+
+.case-purrcel .case-section--logo{
+    background: #fff;
+    padding: 72px 0 110px;
+  }
+  
+  /* Keep intro copy width similar to figma */
+  .case-purrcel .case-section--logo .case-copy{
+    max-width: 110ch;
+  }
+  
+  /* Two-column image layout */
+  .case-purrcel .logo-grid{
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: start;
+  }
+  
+  /* Green mini headings above images */
+  .case-purrcel .logo-kicker{
+    margin: 0 0 18px;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--purrcel-green);
+  }
+  
+  /* Center the right heading like figma */
+  .case-purrcel .logo-kicker--center{
+    text-align: center;
+  }
+  
+  /* Images */
+  .case-purrcel .logo-img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Optional max widths to mimic figma proportions */
+  .case-purrcel .logo-img--initial{
+    max-width: 520px;
+  }
+  
+  .case-purrcel .logo-img--iterations{
+    max-width: 560px;
+    margin: 0 auto; /* centers inside column */
+  }
+  
+  /* Final logo label */
+  .case-purrcel .logo-final-label{
+    margin: 62px 0 22px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  /* Final logo centered */
+  .case-purrcel .logo-final{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .case-purrcel .logo-final-img{
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive */
+  @media (max-width: 980px){
+    .case-purrcel .logo-grid{
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+  
+    .case-purrcel .logo-kicker--center{
+      text-align: left;
+    }
+  
+    .case-purrcel .logo-img--iterations{
+      margin: 0;
+    }
+  }
+  
