@@ -799,6 +799,10 @@
   /* keep text readable + not too wide */
   .case-purrcel .case-section--reflection .case-copy{
     max-width: 110ch;
+  }
+  
+  /* Reflection header should be green */
+.case-purrcel .case-section--reflection .case-title{
     color: var(--purrcel-green);
   }
   
