@@ -28,7 +28,17 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; height: 100% }
+html, body{
+  margin: 0;
+  padding: 0;
+  height: auto;        /* ✅ don’t lock height */
+  min-height: 100%;    /* ✅ still allows full height */
+}
+
+body{
+  min-height: 100vh;   /* ✅ ensures footer can sit at bottom */
+}
+
 
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -220,7 +230,8 @@ body{
   color: var(--footer-text);
 
   padding: 54px var(--page-pad-x) 80px; /* 👈 increase bottom padding */
-  margin: 0;                            /* 👈 kill any stray margins */
+  margin: 0;    
+  margin-top: auto;                        /* 👈 kill any stray margins */
 }
 
 
