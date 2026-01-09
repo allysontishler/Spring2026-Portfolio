@@ -383,6 +383,16 @@ main {
   transform: scale(1.18); /* change per video if needed */
 }
 
+.case-everytime .phone-media__video-social{
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+  object-position: 58.5% 55%;
+  transform: scale(1.18); /* change per video if needed */
+}
+
 
 /* HERO phone video mask */
 .case-everytime .case-hero__phone-wrap{
