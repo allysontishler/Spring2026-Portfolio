@@ -360,6 +360,31 @@ main {
 
 .case-everytime main { padding-bottom: 40px; }
 
+/* HERO phone video mask */
+.case-everytime .case-hero__phone-wrap{
+  height: 70vh;
+  max-height: 475px;
+  width: auto;
+
+  aspect-ratio: 9 / 19.5;      /* phone-ish ratio */
+  border-radius: 34px;          /* rounded corners */
+  overflow: hidden;             /* ✅ crops the video */
+  background: #000;
+
+  /* keeps it aligned like your old image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-everytime .case-hero__phone-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;            /* ✅ crops edges to fill */
+  display: block;
+}
+
+
 .case-everytime .case-inner {
   max-width: 1160px;
   margin: 0 auto;

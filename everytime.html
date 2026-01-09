@@ -61,12 +61,24 @@
 
             <!-- RIGHT -->
             <div class="case-hero__right">
-              <img
-                class="case-hero__phone"
-                src="assets/onboarding-screen.png"
-                alt="Everytime welcome screen"
-              />
+              <div class="case-hero__phone-wrap">
+                <video
+                  class="case-hero__phone-video"
+                  autoplay
+                  muted
+                  playsinline
+                  loop
+                  preload="metadata"
+                  poster="assets/onboarding-screen.png"
+                >
+                  <!-- ✅ best practice: mp4 first -->
+                  <source src="assets/hero-recording.mp4" type="video/mp4" />
+                  <!-- fallback (okay to keep if you only have .mov for now) -->
+                  <source src="assets/hero-recording.mov" type="video/quicktime" />
+                </video>
+              </div>
             </div>
+            
           </div>
         </div>
       </section>
