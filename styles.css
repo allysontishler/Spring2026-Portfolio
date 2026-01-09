@@ -364,27 +364,31 @@ main {
 .case-everytime .case-hero__phone-wrap{
   height: 70vh;
   max-height: 475px;
-  width: auto;
 
-  aspect-ratio: 9 / 19.5;      /* phone-ish ratio */
-  border-radius: 32px;          /* rounded corners */
-  overflow: hidden;             /* ✅ crops the video */
+  aspect-ratio: 9 / 19.5;
+  width: calc(min(70vh, 475px) * (9 / 19.5)); /* ✅ derived width */
+
+  border-radius: 32px;
+  overflow: hidden;
   background: #000;
 
-  /* keeps it aligned like your old image */
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1);
-  object-fit: cover;
+
+
 }
 
 .case-everytime .case-hero__phone-video{
   width: 100%;
   height: 100%;
-  object-fit: cover;            /* ✅ crops edges to fill */
+  object-fit: cover;
   display: block;
+
+  /* ✅ if you still need a *tiny* zoom, do it here */
+  transform: scale(1.0);
 }
+
 
 
 .case-everytime .case-inner {
