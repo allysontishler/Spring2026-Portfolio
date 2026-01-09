@@ -68,7 +68,7 @@ main {
 
 /* Prevent content from sliding under the fixed nav */
 body{
-  padding-top: 78px; /* adjust if your header is taller/shorter */
+  padding-top: 0; /* adjust if your header is taller/shorter */
 }
 
 
