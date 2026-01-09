@@ -301,4 +301,25 @@
       max-width: 100%;
     }
   }
+
+
+/* =========================
+   INFLUENCER MATRIX
+========================= */
+
+.case-purrcel .case-section--matrix{
+    background: #fff;
+    padding: 72px 0 90px; /* matches the airy spacing in figma */
+  }
+  
+  .case-purrcel .matrix-media{
+    margin: 34px auto 0;
+    max-width: 650px; /* matches the screenshot image size */
+  }
+  
+  .case-purrcel .matrix-img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   
