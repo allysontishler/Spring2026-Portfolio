@@ -390,7 +390,7 @@ main {
 
   object-fit: cover;
   object-position: 58.5% 42%;
-  transform: scale(1.18) translateY(-6%); /* change per video if needed */
+  transform: scale(1.18) translateY(-2%); /* change per video if needed */
 }
 
 
