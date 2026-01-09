@@ -117,7 +117,7 @@
     }
   
     .case-purrcel .case-title {
-      font-size: 34px;
+      font-size: 26px;
     }
   
     .case-purrcel .hero-media {
@@ -168,7 +168,7 @@
   /* headings */
   .case-purrcel .case-title{
     margin: 16px 0 18px;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.15;
     font-weight: 800;
     color: #111;
@@ -199,7 +199,7 @@
   /* "My Role" subhead + small line */
   .case-purrcel .case-subhead{
     margin: 34px 0 10px;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.2;
     font-weight: 800;
     color: #111;
@@ -215,6 +215,7 @@
   /* OUTCOME mint section title */
   .case-purrcel .case-section--outcome{
     padding: 45px 0;
+    font-size: 26px;
   }
 
   /* Overview block background */
