@@ -1024,6 +1024,47 @@ body {
 }
 
 
+/* =========================
+   JOURNEY MAPPING (inside gray)
+========================= */
+
+.case-everytime .journey-section{
+  margin-top: 84px; /* space after Personas */
+}
+
+.case-everytime .journey-title{
+  margin: 0 0 12px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111;
+}
+
+.case-everytime .journey-intro{
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2b2b2b;
+  max-width: 92ch;
+}
+
+.case-everytime .journey-intro--sub{
+  margin-bottom: 34px; /* space before first image */
+}
+
+.case-everytime .journey-stack{
+  display: grid;
+  gap: 34px; /* even spacing between the 3 journey images */
+}
+
+.case-everytime .journey-img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
 
 
 
