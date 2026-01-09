@@ -57,6 +57,21 @@ main {
   padding: var(--nav-top) var(--page-pad-x) 14px;
 }
 
+/* Always-visible nav */
+.site-header{
+  position: fixed;   /* was: sticky */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Prevent content from sliding under the fixed nav */
+body{
+  padding-top: 78px; /* adjust if your header is taller/shorter */
+}
+
+
 .nav {
   display: flex;
   align-items: flex-start;
