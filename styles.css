@@ -1159,6 +1159,59 @@ body {
 }
 
 
+/* =========================
+   EXPLORATORY PLAYTESTING (white)
+========================= */
+.case-everytime .case-section--playtesting{
+  background: #fff;
+  padding: 90px 0 110px;
+}
+
+.case-everytime .playtesting-title{
+  margin: 0 0 22px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111;
+}
+
+.case-everytime .playtesting-copy{
+  max-width: 120ch;
+  display: grid;
+  gap: 14px;              /* space between the two paragraphs */
+  margin-bottom: 26px;    /* space before the table image */
+}
+
+/* Make sure your table image sits centered and scales nicely */
+.case-everytime .playtesting-table{
+  margin-top: 0;          /* we’re controlling spacing via playtesting-copy */
+}
+
+.case-everytime .playtesting-table .table-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 920px;       /* matches the screenshot feel */
+  margin: 0 auto;         /* centers the table */
+}
+
+/* Mobile: keep it readable and scrollable if needed */
+@media (max-width: 980px){
+  .case-everytime .case-section--playtesting{
+    padding: 70px 0 90px;
+  }
+
+  .case-everytime .playtesting-copy{
+    margin-bottom: 22px;
+  }
+
+  .case-everytime .playtesting-table .table-img{
+    max-width: none;
+  }
+}
+
+
+
 
 /* =========================
    RESPONSIVE (site-wide)
