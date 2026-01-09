@@ -215,6 +215,24 @@
   .case-purrcel .case-section--outcome{
     padding: 45px 0;
   }
+
+  /* Overview block background */
+.case-purrcel .case-section--overview{
+    background: #F5F5F5;
+    padding: 72px 0 50px; /* slightly deeper so it feels like a block */
+  }
+
+  .case-purrcel .text-green{
+    color: var(--purrcel-green);
+    font-weight: 700; /* optional but it helps it read like emphasis */
+  }
+  
+  
+  /* add breathing room before Target Players */
+.case-purrcel .case-title--subsection{
+    margin-top: 70px; /* increase from 54px */
+  }
+
   
   .case-purrcel .outcome-title{
     margin: 0 0 14px;
