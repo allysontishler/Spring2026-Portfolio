@@ -384,6 +384,7 @@
     line-height: 1.75;
     color: #2b2b2b;
     max-width: 64ch;
+    padding-top: 20px;
   }
   
   .case-purrcel .persona-needs-label{
@@ -420,7 +421,6 @@
   
     .case-purrcel .persona-desc{
       max-width: 100%;
-      margin-top: 24px;
     }
   }
   
