@@ -28,12 +28,15 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; height: 100% }
 
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: #fff;
+  display: flex;
+  flex-direction: column;
+
 }
 
 /* =========================
@@ -196,8 +199,11 @@ body {
 .footer {
   background: var(--footer);
   color: var(--footer-text);
-  padding: 54px var(--page-pad-x) 50px;
+
+  padding: 54px var(--page-pad-x) 80px; /* 👈 increase bottom padding */
+  margin: 0;                            /* 👈 kill any stray margins */
 }
+
 
 .footer__inner {
   max-width: 1100px;
