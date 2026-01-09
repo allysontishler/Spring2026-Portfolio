@@ -935,7 +935,8 @@ body {
 ========================= */
 
 .case-everytime .persona-section{
-  margin-top: 64px;
+  margin-top: 64px auto 0;
+  max-width: 1000px;
 }
 
 .case-everytime .persona-title{
