@@ -113,11 +113,12 @@
   ========================= */
   
   .case-purrcel .case-subtitle{
-    margin: 20px 0 44px;
+    margin: 0 0 44px;
     font-size: 18px;
     line-height: 1.6;
     max-width: 720px;
     color: #1a1a1a;
+    margin-bottom: 40px;
   }
   
   .case-purrcel .hero-media{
