@@ -1595,3 +1595,14 @@ body{
 .case-purrcel main{
   padding-bottom: 0 !important;
 }
+
+
+
+.footer__email {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer__email:hover {
+  text-decoration: underline;
+}

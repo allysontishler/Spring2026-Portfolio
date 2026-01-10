@@ -806,3 +806,12 @@
     color: var(--purrcel-green);
   }
   
+  .footer__email {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer__email:hover {
+    text-decoration: underline;
+  }
+  

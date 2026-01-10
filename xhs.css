@@ -680,3 +680,12 @@
     }
   }
   
+  .footer__email {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer__email:hover {
+    text-decoration: underline;
+  }
+  
