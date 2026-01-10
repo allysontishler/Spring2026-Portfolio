@@ -264,3 +264,109 @@
     }
   }
   
+
+/* =========================
+   XHS – KEY FINDINGS (Pink)
+========================= */
+
+.case-xhs__block--pink{
+    background: #fff3f3; /* soft pink like your other case */
+  }
+  
+  .case-xhs__red-title{
+    margin: 0 0 18px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #f91f15;
+    line-height: 1.2;
+  }
+  
+  .case-xhs__red-title--spaced{
+    margin-top: 56px;
+  }
+  
+  /* Callout with vertical line */
+  .case-xhs__callout{
+    margin: 8px 0 34px;
+    padding-left: 18px;
+    border-left: 3px solid #111; /* vertical line */
+  }
+  
+  .case-xhs__callout-text{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #111;
+  }
+  
+  .case-xhs__callout-text strong{
+    font-weight: 800;
+  }
+  
+  /* “Core Findings” label */
+  .case-xhs__label{
+    margin: 0 0 14px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #111;
+  }
+  
+  /* Numbered findings */
+  .case-xhs__findings{
+    margin: 0;
+    padding-left: 18px; /* aligns numbers like your screenshot */
+    display: grid;
+    gap: 18px;
+  }
+  
+  .case-xhs__findings > li{
+    font-size: 13px;
+    line-height: 1.7;
+    color: #111;
+  }
+  
+  .case-xhs__findings > li::marker{
+    font-weight: 700;
+    color: #111;
+  }
+  
+  /* Sub-bullets under each number */
+  .case-xhs__findings ul{
+    margin: 8px 0 0;
+    padding-left: 18px;
+    display: grid;
+    gap: 6px;
+  }
+  
+  .case-xhs__findings ul li{
+    font-size: 13px;
+    line-height: 1.7;
+    color: #111;
+  }
+  
+  /* Closing sentence under findings */
+  .case-xhs__closing{
+    margin: 18px 0 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #111;
+    max-width: 95ch;
+  }
+  
+  /* Why this matters bullets */
+  .case-xhs__body--wide{
+    max-width: 95ch;
+  }
+  
+  .case-xhs__bullets{
+    margin: 14px 0 0;
+    padding-left: 18px;
+  }
+  
+  .case-xhs__bullets li{
+    margin: 6px 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #111;
+  }
+  
