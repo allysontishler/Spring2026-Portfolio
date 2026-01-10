@@ -370,3 +370,59 @@
     color: #111;
   }
   
+
+
+/* =========================
+   XHS – RESEARCH QUESTION + METHOD (White)
+========================= */
+
+.case-xhs__block--white{
+    background: #fff;
+  }
+  
+  .case-xhs__section-title{
+    margin: 0 0 14px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.2;
+  }
+  
+  .case-xhs__section-title--spaced{
+    margin-top: 56px; /* space between question and methodology */
+  }
+  
+  /* base body copy (reuse if you already have one) */
+  .case-xhs__body{
+    margin: 0 0 16px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #111;
+    max-width: 95ch;
+  }
+  
+  .case-xhs__rq{
+    max-width: 110ch; /* slightly wider like the screenshot */
+  }
+  
+  .case-xhs__method-intro{
+    margin-top: 0;
+  }
+  
+  /* Method bullets: spacing + indents to match */
+  .case-xhs__bullets--method{
+    margin: 10px 0 18px;
+    padding-left: 18px;
+  }
+  
+  .case-xhs__bullets--method li{
+    margin: 6px 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #111;
+  }
+  
+  .case-xhs__method-note{
+    margin: 0; /* last paragraph sits tight like figma */
+  }
+  
