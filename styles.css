@@ -580,6 +580,7 @@ body{
   grid-template-columns: 1fr auto;
   column-gap: 56px;
   align-items: start;
+  padding-bottom: 50px;
 }
 
 .case-everytime .project-brief .case-body { max-width: 120ch; }
