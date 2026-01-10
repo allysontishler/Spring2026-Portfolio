@@ -525,7 +525,7 @@
   }
   
   .case-xhs__section-title--spaced {
-    padding-top: 20px;
+    padding-top: 60px;
   }
   /* Responsive: stack into one column */
   @media (max-width: 980px){
