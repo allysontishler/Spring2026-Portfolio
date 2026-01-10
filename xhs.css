@@ -689,3 +689,7 @@
     text-decoration: underline;
   }
   
+  .nav__brand:hover {
+    opacity: 0.8;
+  }
+  

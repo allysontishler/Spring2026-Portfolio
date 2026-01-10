@@ -1606,3 +1606,7 @@ body{
 .footer__email:hover {
   text-decoration: underline;
 }
+
+.nav__brand:hover {
+  opacity: 0.8;
+}
