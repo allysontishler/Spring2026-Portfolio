@@ -398,7 +398,7 @@ body{
   --case-gray: #f5f5f5;
 }
 
-.case-everytime main { padding-bottom: 40px; }
+.case-everytime main { padding-bottom: 0; }
 
 
 /* Reusable phone video component */
@@ -1586,3 +1586,11 @@ body{
   .case-everytime .key-findings__grid { grid-template-columns: 1fr; }
 }
 
+/* =========================
+   WHITE SPACE KILLER (case study pages)
+   If DevTools selects <main> in the blank area, this removes it.
+========================= */
+.case-everytime main,
+.case-purrcel main{
+  padding-bottom: 0 !important;
+}
