@@ -17,7 +17,7 @@
   }
   
   .case-xhs .case-hero-inner {
-    max-width: 1180px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 var(--page-pad-x);
   }
@@ -350,12 +350,12 @@
     font-size: 13px;
     line-height: 1.7;
     color: #111;
-    max-width: 95ch;
+    max-width: 120ch;
   }
   
   /* Why this matters bullets */
   .case-xhs__body--wide{
-    max-width: 95ch;
+    max-width: 120ch;
   }
   
   .case-xhs__bullets{
@@ -398,11 +398,11 @@
     font-size: 13px;
     line-height: 1.75;
     color: #111;
-    max-width: 95ch;
+    max-width: 120ch;
   }
   
   .case-xhs__rq{
-    max-width: 110ch; /* slightly wider like the screenshot */
+    max-width: 120ch; /* slightly wider like the screenshot */
   }
   
   .case-xhs__method-intro{
@@ -561,7 +561,7 @@
     font-size: 16px;
     font-weight: 500;
     color: #111;
-    max-width: 920px;      /* matches your case inner width */
+    max-width: 1160px;      /* matches your case inner width */
     margin-left: auto;
     margin-right: auto;
   }
@@ -608,7 +608,7 @@
   .case-xhs__section--pink{ background: var(--xhs-pink); }
   
   .case-xhs__inner{
-    max-width: 920px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 var(--page-pad-x);
   }
@@ -632,7 +632,7 @@
     font-size: 13px;
     line-height: 1.75;
     color: #111;
-    max-width: 86ch;
+    max-width: 120ch;
   }
   
   .case-xhs__body--wide{
