@@ -543,3 +543,39 @@
     }
   }
   
+
+  /* =========================
+   XHS – TRUST FUNNEL DIVIDER
+========================= */
+
+.case-xhs__trust-funnel{
+    background: #fff;
+    border-top: 3px solid #ff2d2d;
+    border-bottom: 3px solid #ff2d2d;
+  
+    padding: 48px 0; /* vertical spacing like figma */
+  }
+  
+  .case-xhs__trust-title{
+    margin: 0 0 14px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .case-xhs__trust-flow{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff2d2d;
+    letter-spacing: 0.2px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 980px){
+    .case-xhs__trust-flow{
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+  
