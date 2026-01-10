@@ -580,7 +580,7 @@ body{
   grid-template-columns: 1fr auto;
   column-gap: 56px;
   align-items: start;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .case-everytime .project-brief .case-body { max-width: 120ch; }
@@ -632,7 +632,7 @@ body{
 
 .case-everytime .role-bubble{
   margin-top: 315px;        /* pushes it down inside gray */
-  margin-bottom: -120px;    /* reduces how far it jumps upward visually */
+  margin-bottom: -200px;    /* reduces how far it jumps upward visually */
 }
 
 
