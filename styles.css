@@ -1482,7 +1482,7 @@ body{
 ========================= */
 
 .case-everytime .case-section--final{
-  padding: 0;
+  padding-bottom: 45px;
 }
 
 .case-everytime .case-kicker--final{
