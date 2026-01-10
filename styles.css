@@ -25,6 +25,9 @@
     #FF7A1A 50%,
     #FFD60F 100%
   );
+
+  /* ✅ single source of truth for fixed header height */
+  --header-h: 92px;
 }
 
 * { box-sizing: border-box; }
@@ -32,8 +35,11 @@
 html, body{
   margin: 0;
   padding: 0;
-  height: auto;
   min-height: 100%;
+}
+
+html{
+  background: var(--footer); /* if anything extends beyond body, it blends with footer */
 }
 
 body{
@@ -44,43 +50,36 @@ body{
 
   display: flex;
   flex-direction: column;
-}
 
-html{
-  background: var(--footer); /* same as footer background */
+  /* ✅ pushes all content below fixed nav */
+  padding-top: var(--header-h);
 }
-body{
-  background: #fff;          /* keep page background white */
-}
-
-body{
-  padding-top: 92px; /* adjust until content starts perfectly under nav */
-}
-
-
 
 main{
-  flex: 1 0 auto;   /* ✅ don’t force weird stretching */
+  flex: 1 0 auto;
+  display: block;
 }
 
-.footer{
-  margin-top: auto; /* ✅ keeps footer at bottom on short pages */
+footer{
+  flex-shrink: 0;
 }
-
 
 /* =========================
    NAV
 ========================= */
-.site-header {
-  position: sticky;
+.site-header{
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 
   padding: var(--nav-top) var(--page-pad-x) 14px;
 }
+
 
 /* Always-visible nav */
 .site-header{
