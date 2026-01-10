@@ -702,3 +702,12 @@
     cursor: pointer;
   }
   
+  .nav__link,
+.nav__brand {
+  transition: opacity 0.15s ease;
+}
+
+.nav__link:hover,
+.nav__brand:hover {
+  opacity: 0.8;
+}
