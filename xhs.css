@@ -110,7 +110,7 @@
   }
   
   .case-xhs__hero {
-    max-width: 1000px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 var(--page-pad-x);
   
@@ -154,7 +154,7 @@
   /* image itself */
   .case-xhs__hero-visual img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1160px;
     height: auto;
     display: block;
   }
