@@ -558,9 +558,10 @@
   
   .case-xhs__trust-title{
     margin: 0 0 14px;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     color: #111;
+    padding-right: 10px;
   }
   
   .case-xhs__trust-flow{
