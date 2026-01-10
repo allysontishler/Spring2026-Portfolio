@@ -110,7 +110,7 @@
   }
   
   .case-xhs__hero {
-    max-width: 920px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 var(--page-pad-x);
   
@@ -137,7 +137,7 @@
   
   /* description */
   .case-xhs .case-deck {
-    max-width: 62ch;
+    max-width: 120ch;
     font-size: 16px;
     line-height: 1.6;
     color: #2b2b2b;
@@ -154,7 +154,7 @@
   /* image itself */
   .case-xhs__hero-visual img {
     width: 100%;
-    max-width: 760px;
+    max-width: 1000px;
     height: auto;
     display: block;
   }
